@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <title>OK.LEVIN</title>
+    <style>
+        body {
+            font-family: 'Onest';
+        }
+        .wrapIndex {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto; 
+            padding: 100px 0;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;    
+        }
+        li:before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: #FF2615;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        li:hover::before {
+            background: green;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        li:hover a {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapIndex">
+        <img src="./assets/img/logo.svg" alt="">
+        <h1>Верстка страниц</h1>
+        <ul>
+            <li><a href="/main.html">Главная</a></li>
+            <li><a href="/main.html">Дилеры</a></li>
+            <li><a href="/main.html">Монтажники</a></li>
+            <li><a href="/main.html">Подбор монтажника</a></li>
+            <li><a href="/main.html">Контакты</a></li>
+        </ul>
+    </div>
+</body>
+</html>
