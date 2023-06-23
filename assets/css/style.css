@@ -6,6 +6,8 @@
     --color-main: #2a2a2a;
     --color-red: #FF2615;
     --color-grey: #D9D9D9;
+
+    --border-main: 3px solid #2a2a2a;
 }
 * {
     margin: 0;
@@ -25,6 +27,36 @@ body {
     position: relative;
 }
 
+/* Спецификация */
+.wrap {
+    display: flex;   
+}
+
+.mainTitle {
+    font-size: var(--font-size-main);
+    width: 50%;
+    line-height: 0.85em;
+    font-weight: 700;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.btn {
+    border: 3px solid var(--color-main);
+    border-radius: 40px;
+    background: transparent;
+    padding: 10px 18px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--color-main);
+    text-decoration: none;
+}
 /* Top panel */
 .topPanel {
     display: flex;
@@ -50,16 +82,6 @@ body {
 .burger span:not(:last-child) {
     margin-bottom: 7px;
 }
-.auth {
-    width: 81px;
-    border: 3px solid #2a2a2a;
-    border-radius: 40px;
-    background: transparent;
-    padding: 10px 0;
-    font-weight: 500;
-    font-size: 17px;
-    cursor: pointer;
-}
 
 /* Header */
 .image {
@@ -68,11 +90,8 @@ body {
     right: 0;
     z-index: -1;
 }
-.mainTitle {
-    font-size: var(--font-size-main);
-    width: 50%;
+.header .mainTitle {
     margin: 45px 0 0;
-    line-height: 0.85em;
 }
 .mainTitle span {
     color: var(--color-red);
@@ -101,4 +120,42 @@ body {
     line-height: 42px;
     max-width: 690px;
     margin-top: 165px;
+}
+
+/* section */
+.section {
+    padding: 68px 0;
+}
+.section .wrap {
+    justify-content: space-between;
+}
+.sectionAbout {
+    max-width: 316px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section .mainTitle {
+    margin-bottom: 18px;
+}
+.sectionAbout .text {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: auto;
+}
+.sectionImage {
+    max-width: 810px;
+    width: 100%;
+    height: 465px;
+    background: var(--color-grey);
+}
+
+/* sectionCards */
+.mainCards {
+    display: flex;
+    justify-content: space-between;
+}
+.mainCard {
+    padding: 40px;
+    border: var(--border-main);
 }
