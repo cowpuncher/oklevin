@@ -26,15 +26,28 @@ body {
     margin: 0 auto;
     position: relative;
 }
-
+.imageWithText {
+    line-height: 1.4em;
+}
 /* Спецификация */
 .wrap {
     display: flex;   
 }
-
+a.btnBig {
+    border: 3px solid #2A2A2A;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #2a2a2a;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0;
+}
 .mainTitle {
     font-size: var(--font-size-main);
-    width: 50%;
     line-height: 0.85em;
     font-weight: 700;
 }
@@ -44,7 +57,9 @@ body {
     font-size: 70px;
     line-height: 70px;
 }
-
+.title span {
+    display: block;
+}
 .btn {
     border: 3px solid var(--color-main);
     border-radius: 40px;
@@ -56,6 +71,68 @@ body {
     display: inline-block;
     color: var(--color-main);
     text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.image {
+    position: relative;
+}
+.aroundRed:before {
+    content: '';
+    display: block;
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    background: var(--color-red);
+    border-radius: 50%;
+    bottom: -80px;
+    left: -110px;
+    z-index: -1;
+}
+.lineRed:before {
+    content: '';
+    display: block;
+    width: 1465px;
+    height: 70px;
+    position: absolute;
+    background: var(--color-red);
+    transform: rotate(70deg) translate(27rem, 32rem);
+    z-index: -1;
+}
+.imageLeft {
+    max-width: 807px;
+    position: relative;
+    z-index: -2;
+}
+p {
+    line-height: 1.4em;
+}
+ul {
+    list-style: none;
+}
+li {
+    position: relative;
+    display: flex;
+    align-items: center;  
+    padding-left: 27px;
+}
+li:not(:last-child) {
+    margin-bottom: 24px;  
+}
+li:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #FF2615;
+    margin-right: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
 }
 /* Top panel */
 .topPanel {
@@ -84,7 +161,7 @@ body {
 }
 
 /* Header */
-.image {
+.header .image {
     position: absolute;
     top: 0;
     right: 0;
@@ -92,6 +169,7 @@ body {
 }
 .header .mainTitle {
     margin: 45px 0 0;
+    width: 50%;
 }
 .mainTitle span {
     color: var(--color-red);
@@ -108,7 +186,7 @@ body {
     height: 90px;
     display: block;
     background: var(--color-grey);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .header .listItem {
     width: 200px;
@@ -119,7 +197,7 @@ body {
     font-size: var(--font-size-main-desc);
     line-height: 42px;
     max-width: 690px;
-    margin-top: 165px;
+    margin-top: 160px;
 }
 
 /* section */
@@ -150,12 +228,296 @@ body {
     background: var(--color-grey);
 }
 
-/* sectionCards */
+/* Секция с карточками на главной */
+.sectionCards {
+    padding-top: 50px;
+}
 .mainCards {
     display: flex;
     justify-content: space-between;
 }
+.mainCards:nth-child(odd) {
+    align-items: flex-end;
+}
+.mainCards:nth-child(even) {
+    align-items: flex-start;
+}
+.mainCards:not(:last-child) {
+    margin-bottom: 30px;
+}
 .mainCard {
     padding: 40px;
     border: var(--border-main);
+}
+.mainCard.small {
+    max-width: 423px;
+    width: 100%;
+}
+.mainCard.big {
+    max-width: 745px;
+    width: 100%;
+}
+.mainCards .title {
+    margin-bottom: 40px;
+}
+.mainCard ul {
+    max-width: 470px;
+    width: 100%;
+}
+.mainCard .btnMore {
+    margin-top: 40px;
+}
+
+/* Секция сотни решений */
+.sectionInfo {
+    padding-top: 130px;
+}
+.sectionInfo .mainTitle {
+    text-align: right;
+    margin-bottom: 75px;
+    width: 99%;
+    margin-left: auto;
+}
+.sectionInfo .title {
+    padding-left: 85px;
+    margin-bottom: 32px;
+}
+.sectionInfo .title span:first-child {
+    margin-left: 175px;
+}
+.imageWithText {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionInfo .imageWithText p {
+    width: 33%;
+}
+.sectionInfo .title.secondTitle {
+    padding: 13px 115px 0 0;
+    text-align: end;
+    margin-bottom: 27px;
+}
+.sectionInfo .title.secondTitle span:nth-child(3) {
+    margin-right: 80px;
+}
+.sectionInfo .title.secondTitle span:nth-child(2) {
+    margin-right: 120px;
+}
+.sectionInfo .title.secondTitle span:nth-child(1) {
+    margin: 0 250px 0 0;
+}
+.sectionInfo .desc.right {
+    width: 100%;
+    max-width: 410px;
+    margin-left: auto;
+}
+.sectionInfo .imageRight {
+    max-width: 620px;
+    margin: 110px 0 0 auto;
+}
+.sectionInfo .thirdTitle {
+    margin: -49px 0 28px 0;
+    padding: 0;
+}
+.sectionInfo .thirdTitle span:first-child {
+    margin-left: 0;
+}
+.sectionInfo .thirdTitle span:nth-child(2) {
+    margin-left: 140px;
+}
+.desc.center {
+    max-width: 628px;
+    padding-right: 60px;
+    margin: 0 auto;
+}
+.sectionInfo .btnBig {
+    margin-top: 70px;
+}
+
+/* Секция с динамическим заголовком */
+.sectionEffect {
+    padding: 120px 0 0;
+}
+.sectionEffectImage {
+    position: relative;
+}
+.sectionEffectElement {
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.sectionEffectElement .title {
+    padding: 55px 0 0 50px;
+    color: #fff;
+}
+.sectionEffectElement .title span:nth-child(2) {
+    margin-left: 120px;
+}
+.sectionEffectElement .arrow {
+    margin-left: 170px;
+}
+
+.listElements {
+    padding-top: 70px;
+    position: relative;
+}
+.listElements .desc {
+    max-width: 500px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 70px 50px;
+}
+.listElement {
+    display: flex;
+    align-items: center;
+}
+.listElement .image {
+    max-width: 560px;
+    width: 100%;
+}
+.listElement .name {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+}
+.listElement .line {
+    height: 1px;
+    width: 41%;
+    margin: 0 auto;
+    background: var(--color-red);
+}
+.listElement:nth-child(1),
+.listElement:nth-child(2),
+.listElement:nth-child(3) {
+    padding-left: 50px;
+    > .image {
+        margin-left: 30px;
+    }
+    > .name {
+        max-width: 82px;
+        display: block;
+        width: 100%;
+    }
+}
+.listElement:nth-child(2) {
+    padding-right: 130px;
+}
+.listElement:nth-child(3) {
+    padding-right: 250px;
+}
+.listElement:nth-child(4),
+.listElement:nth-child(5),
+.listElement:nth-child(6) {
+    padding-right: 15px;
+    > .image {
+        margin-right: 30px;
+    }
+    > .line {
+        margin-right: 30px;
+    }    
+    > .name {
+        max-width: 100px;
+        display: block;
+        width: 100%;
+    }
+}
+.listElement:nth-child(4) {
+    padding-left: 260px;
+    > .line {
+        width: 30%;
+    } 
+}
+.listElement:nth-child(5) {
+    padding-left: 125px;
+    > .line {
+        width: 35%;
+    } 
+}
+.listElements:before {
+    content: '';
+    display: block;
+    background: var(--color-red);
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35rem;
+    right: 10rem;
+}
+.listElements:after {
+    content: '';
+    display: block;
+    height: 71px;
+    width: 645px;
+    background: var(--color-red);
+    position: absolute;
+    z-index: -1;
+    transform: rotate(37deg);
+    bottom: 20rem;
+    left: 2rem;
+}
+
+/* Секция выбор цвета лестницы */
+.stairsItem {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.colorList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colorsSidebar {
+    max-width: 360px;
+    width: 100%;
+}
+.colorItem {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.colorItem input {
+    display: none;
+}
+.colorItem:has([data-color='color1']) {
+    background: #B27D40;
+}
+.colorItem:has([data-color='color2']) {
+    background: #CD986F;
+}
+.colorItem:has([data-color='color3']) {
+    background: #E8E1D1;
+}
+.colorItem:has([data-color='color4']) {
+    background: #A97D58;
+}
+.colorItem:has([data-color='color5']) {
+    background: #6F4722;
+}
+.colorItem:has([data-color='color6']) {
+    background: #473427;
+}
+.colorItem:has([data-color='color7']) {
+    background: #EE9191;
+}
+.colorItem:has([data-color='color8']) {
+    background: #B9D1FF;
+}
+.colorItem:has([data-color='color9']) {
+    background: #ECECEC;
+}
+.colorItem:has(:checked)::after {
+    content: url(../img/checked.svg);
+    border: 1px solid var(--color-main);
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
