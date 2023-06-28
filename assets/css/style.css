@@ -25,6 +25,7 @@ body {
     padding: 0 40px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .imageWithText {
     line-height: 1.4em;
@@ -141,6 +142,20 @@ li:before {
     align-items: center;
     padding: 23px 0;
 }
+.topPanel.active {
+    background: #fff;
+}
+.topPanel.active .burger span:nth-child(2) {
+    display: none;
+}
+.topPanel.active .burger span:nth-child(1) {
+    transform: rotate(45deg) translate(0px, 7px);
+    width: 30px;
+}
+.topPanel.active .burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, -6px);
+    width: 30px;
+}
 .menu {
     margin: 0 auto 0 80px;
     display: flex;
@@ -159,19 +174,100 @@ li:before {
 .burger span:not(:last-child) {
     margin-bottom: 7px;
 }
+.topPanel.active  .burger {
+    margin-right: 9px;
+}
+/* Dropmenu */
+
+.topMenu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.topMenu.active {
+    display: block;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .5;
+    z-index: -1;
+}
+.topMenuDrop {
+    background: #fff;
+    border-top: 1px solid #D7D7D7;
+}
+.topMenuDrop a {
+    color: var(--color-main);
+    text-decoration: none;
+}
+.topMenuBody {
+    padding: 61px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.topMenuBig {
+    display: flex;
+    flex-direction: column;
+}
+.topMenuBig a {
+    font-weight: 700;
+    font-size: var(--font-size-title);
+    line-height: 70px;
+}
+.topMenuBig a:not(:last-child) {
+    margin-bottom: 50px;
+}
+.topMenuSmall {
+    max-width: 285px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.topMenuSmall a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+}
+.topMenuSmall a:not(:last-child) {
+    margin: 20px 0 0;
+}
+.topMenuSmall .contacts {
+    margin-top: auto;
+}
+.topMenuSmall .contacts .address, 
+.topMenuSmall .contacts .phone {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #808080;
+    margin-top: 10px;
+    display: block;
+}
 
 /* Header */
 .header .image {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -270px;
+    right: -45%;
     z-index: -1;
 }
 .header .mainTitle {
     margin: 45px 0 0;
     width: 50%;
 }
-.mainTitle span {
+.header .mainTitle span {
     color: var(--color-red);
 }
 .header .list {
@@ -235,6 +331,7 @@ li:before {
 .mainCards {
     display: flex;
     justify-content: space-between;
+    margin: 0 -15px;
 }
 .mainCards:nth-child(odd) {
     align-items: flex-end;
@@ -248,6 +345,7 @@ li:before {
 .mainCard {
     padding: 40px;
     border: var(--border-main);
+    margin: 0 15px;
 }
 .mainCard.small {
     max-width: 423px;
@@ -459,11 +557,28 @@ li:before {
 }
 
 /* Секция выбор цвета лестницы */
+.sectionColors {
+    padding-top: 120px;
+}
+.sectionColors .title {
+    padding-left: 88px;
+    margin-bottom: 70px;
+}
+.sectionColors .title span:first-child {
+    margin-left: 110px;
+}
 .stairsItem {
     display: none;
-    &.active {
-        display: block;
-    }
+}
+.stairsItem.active {
+    display: block;
+}
+.stairsList .desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 610px;
+    margin-bottom: 45px;
 }
 .colorList {
     display: flex;
@@ -520,4 +635,942 @@ li:before {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+.colorsSidebar .colorsSidebarTitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 32px;
+}
+.stairsColor:not(:last-child) {
+    margin-bottom: 45px;
+}
+.colorsSidebar .btn {
+    width: 375px;
+    position: relative;
+    margin-left: -14px;
+}
+
+/* Секция с весом */
+.sectionWeight {
+    padding-top: 130px;
+}
+.sectionWeight .title span:nth-child(2) {
+    margin-left: 9%;
+}
+.sectionWeight .title span:nth-child(3) {
+    margin-left: 51%;
+}
+.sectionWeight .title {
+    margin-bottom: 70px;
+}
+.sectionWeight .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.sectionWeight .desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 415px;
+    position: relative;
+}
+.sectionWeight .desc:after {
+    content: '';
+    display: block;
+    width: 339px;
+    height: 46px;
+    background: var(--color-red);
+    position: absolute;
+    bottom: 0;
+}
+.sectionWeight .weight {
+    position: relative;
+}
+.sectionWeight .weight:after {
+    content: '';
+    display: block;
+    width: 289px;
+    height: 289px;
+    background: var(--color-red);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -9rem;
+    right: -5rem;
+    z-index: -1;
+}
+.sectionWeight .weight span {
+    font-size: 220px;
+    font-weight: 700;
+    line-height: 171px;
+    margin-bottom: 10px;
+    display: block;
+}
+.sectionWeight .weight p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+/* Секция про безопастность */
+.sectionSafety {
+    padding-top: 265px;
+    position: relative;
+}
+.sectionSafety:after,
+.sectionSafety:before {
+    content: '';
+    display: block;
+    background: var(--color-red);
+    position: absolute;
+    bottom: 0;
+}
+.sectionSafety:after {
+    width: 435px;
+    height: 435px;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 18%;
+    left: 11%;
+}
+.sectionSafety:before {
+    width: 706.935px;
+    height: 71px;
+    transform: rotate(-63deg) translate(35rem, 22rem);
+}
+.sectionSafety .title span:nth-child(2) {
+    margin-left: 2%;
+}
+.sectionSafety .title span:nth-child(3) {
+    margin-left: 42%;
+}
+.sectionSafety .image {
+    max-width: 785px;
+    margin-top: -55px;
+}
+.sectionSafetyWrap {
+    position: relative;
+}
+.sectionSafetyWrap {
+    position: absolute;
+    top: 12%;
+    right: -28%;
+    max-width: 500px;
+}
+.sectionSafetyWrap .desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 13%;
+}
+
+/* Секция про монтажников */
+.sectionPersonal {
+    padding-top: 125px;
+}
+.sectionPersonal .title {
+    max-width: 795px;
+    margin-bottom: 70px;
+}
+.sectionPersonalAbout .desc {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.sectionPersonalAbout {
+    max-width: 480px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sectionPersonalAbout .btn {
+    margin-top: auto;
+}
+.sectionPersonalItem {
+    display: flex;
+    align-items: flex-end;
+}
+.sectionPersonalItem .image {
+    margin-right: 30px;
+}
+
+.sectionPersonalItem  .name {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.sectionPersonalItem .info {
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.sectionPersonalItem .count {
+    display: flex;
+    align-items: center;
+}
+.sectionPersonalItem .count span:first-child {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: var(--color-grey);
+    margin-right: 10px;
+}
+
+/* Секция про изменения лестниц */
+.sectionChangeStairs {
+    padding: 120px 0 0;
+}
+.sectionChangeStairs .title span:nth-child(3) {
+    margin-left: 33%;
+}
+.sectionChangeStairs .title span:nth-child(4) {
+    margin-left: 19%;
+}
+.sectionChangeStairs .wrap {
+    justify-content: space-between;
+}
+.sectionChangeStairs .stairs {
+    margin-right: -40px;
+}
+.sectionChangeStairs .about {
+    width: 55%;
+}
+.sectionChangeStairs .about .desc {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    padding-left: 19%;
+    margin-top: 70px;
+}
+.sectionChangeStairs .stairs .desc {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 20px 0 0;
+}
+
+/* Секция с карточкой оффера */
+.sectionOffers {
+    padding: 120px 0 0;
+}
+.offer {
+    border: 4px solid var(--color-main);
+    padding: 55px 0;
+    text-align: center;
+}
+.offer .title {
+    margin-bottom: 70px;
+}
+.offer .desc {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.offer .wrap {
+    justify-content: center;
+}
+.offer .wrap .btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Футер */
+.footer {
+    padding: 120px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerAbout .logo {
+    max-width: 165px;
+    display: block;
+    margin-bottom: 40px;
+}
+.footerAbout .btn {
+    margin-right: 40px;
+}
+.socialLinks {
+    display: flex;
+}
+.socialLinks .social:not(:last-child) {
+    margin-right: 20px;
+}
+.footerAbout .address {
+    margin: 55px 0 13px;
+}
+.contacts .phone {
+    text-decoration: none;
+    color: var(--color-main);
+}
+.footerMenu {
+    max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 82px 0 0;
+}
+.footerMenu  a {
+    text-decoration: none;
+    color: var(--color-main);
+    width: 30%;
+    padding: 0 0 0 28px;
+    position: relative;
+    margin-bottom: 24px;
+    display: block;
+}
+.footerMenu  a:nth-child(odd) {
+    width: 63%;
+}
+.footerMenu  a.dots:before {
+    content: '';
+    display: block;
+    background: var(--color-red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+@media screen and (max-width: 1280px) {
+    .title {
+        font-size: 60px;
+    }
+    .sectionInfo .imageRight {
+        max-width: 35.5vw;
+    }
+    .sectionEffectElement .title span:nth-child(2) {
+        margin-left: 50px;
+    }
+    .header .image {
+        position: absolute;
+        top: -152px;
+        right: -57%;
+        z-index: -1;
+    }
+    .image.aroundRed {
+        max-width: 58vw;
+    }
+    .imageLeft {
+        max-width: 65vw;
+    }
+    .listElement:nth-child(2) {
+        padding-right: 60px;
+    }
+    .listElement:nth-child(2) .line {
+        width: 28%;
+    }
+    .listElement:nth-child(3) {
+        padding-right: 130px;
+    }
+    .listElement:nth-child(3) .line {
+        width: 11%;
+    }
+    .listElement:nth-child(4) {
+        padding-left: 130px;
+    }
+    .listElement:nth-child(4) .line {
+        width: 7%;
+    }
+    .listElement:nth-child(5) {
+        padding-left: 70px;
+    }
+    .listElement:nth-child(5) .line {
+        width: 18%;
+    }
+    .topMenuBig a {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    :root {
+        --font-size-main: 9vw;
+    }
+    body {
+        font-size: 15px;
+    }
+    .mainWrapper {
+        padding: 0 20px;
+    }
+    .topPanel .logo {
+        width: 105px;
+    }
+    .topPanel {
+        padding: 13px 0;
+    }
+    .menu {
+        margin: 0 auto 0 53px;
+    }
+    .burger span {
+        height: 2px;
+        width: 17px;
+    }
+    .burger span:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .topPanel.active .burger span:nth-child(3) {
+        transform: rotate(-45deg) translate(0px, -6px);
+        width: 20px;
+    }
+    .topPanel.active .burger span:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 4px);
+        width: 20px;
+    }
+    .topPanel.active .burger {
+        margin-right: 12px;
+    }
+    .header .mainTitle {
+        margin: 48px 0 0;
+        line-height: 0.95em;
+    }
+    .header .listItem span {
+        width: 8vw;
+        height: 8vw;
+    }
+    .header .listItem {
+        width: 160px;
+    }
+    .header .list {
+        margin-top: 40px;
+        max-width: 475px;
+    }
+    .header .description {
+        max-width: 575px;
+        margin-top: 107px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .sectionImage {
+        max-width: 44vw;
+        height: 400px;
+    }
+    .section .desc {
+        font-size: 17px;
+    }
+    .sectionAbout .text {
+        font-size: 21px;
+    }
+    .title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .sectionCards {
+        padding-top: 0;
+    }
+    .mainCard {
+        padding: 17px 35px 17px 17px;
+    }
+    .mainCard.small {
+        max-width: 300px;
+    }
+    .mainCards .title {
+        margin-bottom: 25px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 22px;
+    }
+    .mainCard .btnMore {
+        margin-top: 23px;
+    }
+    .sectionInfo {
+        padding-top: 68px;
+    }
+    .sectionInfo .mainTitle {
+        width: 90%;            
+        margin-bottom: 48px;
+    }
+    .sectionInfo .title {
+        padding-left: 65px;
+        margin-bottom: 20px;
+    }
+    .sectionInfo .title span:first-child {
+        margin-left: 95px;
+    }
+    .image.aroundRed {
+        max-width: 52vw;
+        height: 52vw;
+    }
+    .sectionInfo .imageWithText p {
+        width: 43%;
+    }
+    .aroundRed:before {
+        width: 180px;
+        height: 180px;
+        bottom: -83px;
+        left: -50px;
+    }
+    .imageLeft {
+        max-width: 52vw;
+        height: 60vw;
+    }
+    .lineRed:before {
+        width: 850px;
+        height: 70px;
+        transform: rotate(74deg) translate(16rem, 16rem);
+    }
+    .sectionInfo .title.secondTitle {
+        padding: 0px 120px 0 0;
+        line-height: 43px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(3) {
+        margin-right: 60px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(2) {
+        margin-right: 80px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(1) {
+        margin: 0 150px 0 0;
+    }
+    .sectionInfo .desc.right {
+        max-width: 305px;
+    }
+    .sectionInfo .imageRight {
+        margin: 37px 0 0 auto;
+        max-width: 49.5vw;
+    }
+    .sectionInfo .title.thirdTitle {
+        padding-left: 0;
+        margin-bottom: 33px;
+    }
+    .sectionInfo .title.thirdTitle span:first-child {
+        margin-left: 0;
+    }
+    .sectionInfo .thirdTitle span:nth-child(2) {
+        margin-left: 90px;
+    }
+    .sectionInfo .thirdTitle {
+        margin: 0 0 33px 0;
+        line-height: 42px;
+    }
+    .desc.center {
+        max-width: 535px;
+        padding-right: 85px;
+        margin: 0 auto;
+    }
+    .sectionInfo .btnBig {
+        margin-top: 35px;
+        padding: 22px 0;
+    }
+    .sectionEffect {
+        padding: 50px 0 0;
+    }
+    .sectionEffectElement .title {
+        padding: 38px 0 0 30px;
+        color: #fff;
+    }
+    .sectionEffectElement .title span:nth-child(2) {
+        margin-left: 115px;
+    }
+    .sectionEffectElement .arrow {
+        margin-left: 105px;
+        width: 5%;
+    }
+    .listElements {
+        padding-top: 40px;
+    }
+    .listElements .desc {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0 0 70px 34px;
+        max-width: 375px;
+    }
+    .listElement .image {
+        max-width: 44vw;
+        width: 100%;
+    }
+    .listElement:nth-child(1), .listElement:nth-child(2), .listElement:nth-child(3) {
+        padding-left: 0;
+    }
+    .listElement:nth-child(4), .listElement:nth-child(5), .listElement:nth-child(6) {
+        padding-right: 0;
+    }
+    .listElement:nth-child(2) {
+        padding-right: 13vw;
+    }
+    .listElement:nth-child(3) {
+        padding-right: 21vw;
+    }
+    .listElement:nth-child(4) {
+        padding-left: 23vw;
+    }
+    .listElement:nth-child(5) {
+        padding-left: 16vw;
+    }
+    .listElement:nth-child(6) {
+        padding-left: 7vw;
+    }
+    .listElements:before {
+        top: 25rem;
+        right: 6rem;
+        width: 180px;
+        height: 180px;
+    }
+    .listElements:after {
+        height: 50px;
+        width: 395px;
+        bottom: 12rem;
+        left: 5rem;
+    }
+    .sectionColors {
+        padding-top: 45px;
+    }
+    .sectionColors .title {
+        padding-left: 25px;
+        margin-bottom: 32px;
+    }
+    .sectionColors .title span:first-child {
+        margin-left: 75px;
+    }
+    .stairsList .desc {
+        font-size: 17px;
+        line-height: 24px;
+        max-width: 45vw;
+        margin-bottom: 45px;
+    }
+    .colorsSidebar {
+        max-width: 312px;
+    }
+    .colorItem {
+        width: 104px;
+        height: 104px;
+    }
+    .colorsSidebar .colorsSidebarTitle {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 22px;
+    }
+    .stars.image {
+        position: relative;
+        left: -40%;
+        width: 150%;
+        z-index: -1;
+    }
+    .stairsColor:not(:last-child) {
+        margin-bottom: 37px;
+    }
+    .colorsSidebar .btn {
+        position: relative;
+        margin-left: -60px;
+    }
+    .sectionWeight {
+        padding-top: 50px;
+    }
+    .sectionWeight .title {
+        margin-bottom: 43px;
+        line-height: 42px;
+    }
+    .sectionWeight .title span:nth-child(2) {
+        margin-left: 13%;
+    }
+    .sectionWeight .title span:nth-child(3) {
+        margin-left: 54%;
+    }
+    .sectionWeight .weight span {
+        font-size: 118px;
+        line-height: 106px;
+    }
+    .sectionWeight .desc {
+        max-width: 415px;
+        padding-left: 90px;
+    }
+    .sectionWeight .desc:after {
+        width: 305px;
+    }
+    .sectionWeight .weight:after {
+        width: 100px;
+        height: 100px;
+        bottom: 1rem;
+        right: 0rem;
+    }
+    .sectionWeight .desc {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .sectionWeight .weight p {
+        padding-left: 20px;
+    }
+    .sectionSafety {
+        padding-top: 55px;
+    }
+    .sectionSafety .title {
+        line-height: 42px;
+    }
+    .sectionSafety .title span:nth-child(2) {
+        margin-left: 4%;
+    }
+    .sectionSafetyWrap {
+        position: absolute;
+        top: 11%;
+        right: -33%;
+        max-width: 330px;
+    }
+    .sectionSafetyWrap .desc {
+        font-size: 17px;
+    }
+    .sectionSafety .image {
+        max-width: 480px;
+        margin-top: -35px;
+    }
+    .sectionSafety:after {
+        width: 235px;
+        height: 235px;
+        bottom: 22%;
+        left: 17%;
+    }
+    .sectionSafety:before {
+        width: 500px;
+        height: 50px;
+        transform: rotate(-63deg) translate(23rem, 10rem);
+    }
+    .sectionPersonal {
+        padding-top: 13px;
+    }
+    .sectionPersonal .title {
+        max-width: 465px;
+        margin-bottom: 88px;
+    }
+    .sectionPersonalAbout {
+        max-width: 310px;
+        margin-right: 37px;
+    }
+    .sectionPersonalAbout .desc {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sectionPersonalItem {
+        flex-direction: column;
+    }
+    .sectionPersonalItem  .data {
+        max-width: 186px;
+        width: 100%;
+    }
+    .sectionPersonalItem .image {
+        margin: 0 0 13px 0;
+    }
+    .sectionPersonalItem .name {
+        font-size: 20px;
+    }
+    .sectionPersonalItem .info {
+        font-size: 17px;
+    }
+    .sectionPersonalAbout .btn {
+        margin-top: 253px;
+    }
+    .sectionChangeStairs {
+        padding: 48px 0 0;
+    }
+    .sectionChangeStairs .title {
+        line-height: 42px;
+    }
+    .sectionChangeStairs .about {
+        width: 100%;
+    }
+    .sectionChangeStairs .about .desc {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 23px;
+        padding-left: 19%;
+        margin-top: 36px;
+    }
+    .sectionChangeStairs .stairs {
+        margin-right: -90px;
+    }
+    .sectionOffers {
+        padding: 50px 0 0;
+    }
+    .offer {
+        padding: 35px 0 45px;
+    }
+    .offer .title {
+        margin-bottom: 52px;
+    }
+    .offer .desc {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .offer .wrap .btn {
+        font-size: 15px;
+    }
+    .footer {
+        padding: 40px 0 15px;
+    }
+    .footerAbout .wrap {
+        flex-direction: column;
+    }
+    .footerAbout .logo {
+        margin-bottom: 30px;
+    }
+    .footerAbout .btn {
+        margin: 0 0 15px 0;
+        max-width: 165px;
+    }
+    .socialLinks .social:not(:last-child) {
+        margin-right: 7px;
+    }
+    .footerMenu {
+        max-width: 56%;
+        padding: 0;
+    }
+    .footerMenu a:nth-child(odd) {
+        width: 55%;
+    }
+    .footer {
+        align-items: flex-start;
+    }
+    .footerMenu a {
+        margin-bottom: 20px;
+    }
+    .footerAbout .address {
+        margin: 13px 0;
+    }
+    .wrapper {
+        padding: 0 20px;
+    }
+    .topMenuBody {
+        padding: 8px 0;
+    }
+    .topMenuBig a:not(:last-child) {
+        margin-bottom: 27px;
+    }
+    .topMenuBig a {
+        font-size: 42px;
+    }
+    .topMenuSmall {
+        max-width: 240px;
+    }
+    .topMenuSmall a {
+        font-size: 15px;
+    }
+    .topMenuSmall a:not(:last-child) {
+        margin: 18px 0 0;
+    }
+    .topMenuSmall .contacts .address, .topMenuSmall .contacts .phone {
+        font-size: 13px;
+        margin-top: 17px;
+    }
+    .sectionPersonal .wrap {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 700px){
+    :root {
+        --font-size-main: 12.5vw;
+        --font-size-main-desc: 24px;
+    }
+    .mainWrapper {
+        padding: 0 12px;
+    }
+    .topPanel .logo {
+        width: 100px;
+    }
+    .btn {
+        padding: 5px 13px;
+        font-size: 15px;
+        border: 2px solid var(--color-main);
+    }
+    .menu {
+        margin: 0 auto 0 18px;
+    }
+    .burger {
+        margin-right: 8px;
+    }
+    .topPanel.active .burger {
+        margin-right: 5px;
+    }
+    .header .mainTitle {
+        margin: 25px 0 0;
+        line-height: 0.95em;
+    }
+    .header .image {
+        top: -57px;
+        right: -70%;
+    }
+    .header .listItem span {
+        width: 11vw;
+        height: 11vw;
+    }
+    .header .list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .header .listItem {
+        width: 140px;
+    }
+    .listItem p {
+        font-size: 13px;
+    }
+    .header .description {
+        max-width: 100%;
+        margin-top: 40px;
+        line-height: 30px;
+    }
+    .section {
+        padding: 30px 0;
+    }
+    .section .desc {
+        font-size: 15px;
+    }
+    .section .mainTitle {
+        margin-bottom: 10px;
+    }
+    .section .wrap {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 29vw;
+    }
+    .sectionAbout .text {
+        position: absolute;
+        bottom: 0;
+    }
+    .sectionImage {
+        max-width: 100%;
+        height: 235px;
+        margin-top: 20px;
+    }
+    .sectionAbout .text {
+        position: absolute;
+        bottom: 0;
+    }
+    .sectionAbout .text {
+        font-size: 17px;
+    }
+    .section {
+        padding: 30px 0 50px;
+    }
+    .mainCards {
+        flex-direction: column;
+        margin: 0;
+    }
+    .mainCard.small {
+        max-width: 100%;
+    }
+    .mainCard {
+        margin: 0;
+    }
+    .mainCard {
+        padding: 11px;
+        margin-bottom: 15px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    li {
+        padding-left: 22px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .mainCards:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .sectionInfo .mainTitle {
+        font-size: 9vw;
+        line-height: 1em;
+    }
 }
