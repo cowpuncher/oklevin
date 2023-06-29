@@ -1,0 +1,1015 @@
+
+@media screen and (max-width: 1280px) {
+    .title {
+        font-size: 60px;
+    }
+    .sectionInfo .imageRight {
+        max-width: 35.5vw;
+    }
+    .sectionEffectElement .title span:nth-child(2) {
+        margin-left: 50px;
+    }
+    .header .image {
+        position: absolute;
+        top: -152px;
+        right: -57%;
+        z-index: -1;
+    }
+    .image.aroundRed {
+        max-width: 58vw;
+    }
+    .imageLeft {
+        max-width: 65vw;
+    }
+    .listElement:nth-child(2) {
+        padding-right: 60px;
+    }
+    .listElement:nth-child(2) .line {
+        width: 28%;
+    }
+    .listElement:nth-child(3) {
+        padding-right: 130px;
+    }
+    .listElement:nth-child(3) .line {
+        width: 11%;
+    }
+    .listElement:nth-child(4) {
+        padding-left: 130px;
+    }
+    .listElement:nth-child(4) .line {
+        width: 7%;
+    }
+    .listElement:nth-child(5) {
+        padding-left: 70px;
+    }
+    .listElement:nth-child(5) .line {
+        width: 18%;
+    }
+    .topMenuBig a {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    :root {
+        --font-size-main: 9vw;
+    }
+    body {
+        font-size: 15px;
+    }
+    .mainWrapper {
+        padding: 0 20px;
+    }
+    .topPanel .logo {
+        width: 105px;
+    }
+    .topPanel {
+        padding: 13px 0;
+    }
+    .menu {
+        margin: 0 auto 0 53px;
+    }
+    .burger span {
+        height: 2px;
+        width: 17px;
+    }
+    .burger span:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .topPanel.active .burger span:nth-child(3) {
+        transform: rotate(-45deg) translate(0px, -6px);
+        width: 20px;
+    }
+    .topPanel.active .burger span:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 4px);
+        width: 20px;
+    }
+    .topPanel.active .burger {
+        margin-right: 12px;
+    }
+    .header .mainTitle {
+        margin: 48px 0 0;
+        line-height: 0.95em;
+    }
+    .header .listItem span {
+        width: 8vw;
+        height: 8vw;
+    }
+    .header .listItem {
+        width: 160px;
+    }
+    .header .list {
+        margin-top: 40px;
+        max-width: 475px;
+    }
+    .header .description {
+        max-width: 575px;
+        margin-top: 107px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .sectionImage {
+        max-width: 44vw;
+        height: 400px;
+    }
+    .section .desc {
+        font-size: 17px;
+    }
+    .sectionAbout .text {
+        font-size: 21px;
+    }
+    .title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .sectionCards {
+        padding-top: 0;
+    }
+    .mainCard {
+        padding: 17px 35px 17px 17px;
+    }
+    .mainCard.small {
+        max-width: 300px;
+    }
+    .mainCards .title {
+        margin-bottom: 25px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 22px;
+    }
+    .mainCard .btnMore {
+        margin-top: 23px;
+    }
+    .sectionInfo {
+        padding-top: 68px;
+    }
+    .sectionInfo .mainTitle {
+        width: 90%;            
+        margin-bottom: 48px;
+    }
+    .sectionInfo .title {
+        padding-left: 65px;
+        margin-bottom: 20px;
+    }
+    .sectionInfo .title span:first-child {
+        margin-left: 95px;
+    }
+    .image.aroundRed {
+        max-width: 52vw;
+        height: 52vw;
+    }
+    .sectionInfo .imageWithText p {
+        width: 43%;
+    }
+    .aroundRed:before {
+        width: 180px;
+        height: 180px;
+        bottom: -83px;
+        left: -50px;
+    }
+    .imageLeft {
+        max-width: 52vw;
+        height: 60vw;
+    }
+    .lineRed:before {
+        width: 850px;
+        height: 70px;
+        transform: rotate(74deg) translate(16rem, 16rem);
+    }
+    .sectionInfo .title.secondTitle {
+        padding: 0px 120px 0 0;
+        line-height: 43px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(3) {
+        margin-right: 60px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(2) {
+        margin-right: 80px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(1) {
+        margin: 0 150px 0 0;
+    }
+    .sectionInfo .desc.right {
+        max-width: 305px;
+    }
+    .sectionInfo .imageRight {
+        margin: 37px 0 0 auto;
+        max-width: 49.5vw;
+    }
+    .sectionInfo .title.thirdTitle {
+        padding-left: 0;
+        margin-bottom: 33px;
+    }
+    .sectionInfo .title.thirdTitle span:first-child {
+        margin-left: 0;
+    }
+    .sectionInfo .thirdTitle span:nth-child(2) {
+        margin-left: 90px;
+    }
+    .sectionInfo .thirdTitle {
+        margin: 0 0 33px 0;
+        line-height: 42px;
+    }
+    .desc.center {
+        max-width: 535px;
+        padding-right: 85px;
+        margin: 0 auto;
+    }
+    .sectionInfo .btnBig {
+        margin-top: 35px;
+        padding: 22px 0;
+    }
+    .sectionEffect {
+        padding: 50px 0 0;
+    }
+    .sectionEffectElement .title {
+        padding: 38px 0 0 30px;
+        color: #fff;
+    }
+    .sectionEffectElement .title span:nth-child(2) {
+        margin-left: 115px;
+    }
+    .sectionEffectElement .arrow {
+        margin-left: 105px;
+        width: 5%;
+    }
+    .listElements {
+        padding-top: 40px;
+    }
+    .listElements .desc {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0 0 70px 34px;
+        max-width: 375px;
+    }
+    .listElement .image {
+        max-width: 44vw;
+        width: 100%;
+    }
+    .listElement:nth-child(1), .listElement:nth-child(2), .listElement:nth-child(3) {
+        padding-left: 0;
+    }
+    .listElement:nth-child(4), .listElement:nth-child(5), .listElement:nth-child(6) {
+        padding-right: 0;
+    }
+    .listElement:nth-child(2) {
+        padding-right: 13vw;
+    }
+    .listElement:nth-child(3) {
+        padding-right: 21vw;
+    }
+    .listElement:nth-child(4) {
+        padding-left: 23vw;
+    }
+    .listElement:nth-child(5) {
+        padding-left: 16vw;
+    }
+    .listElement:nth-child(6) {
+        padding-left: 7vw;
+    }
+    .listElements:before {
+        top: 25rem;
+        right: 6rem;
+        width: 180px;
+        height: 180px;
+    }
+    .listElements:after {
+        height: 50px;
+        width: 395px;
+        bottom: 12rem;
+        left: 5rem;
+    }
+    .sectionColors {
+        padding-top: 45px;
+    }
+    .sectionColors .title {
+        padding-left: 25px;
+        margin-bottom: 32px;
+    }
+    .sectionColors .title span:first-child {
+        margin-left: 75px;
+    }
+    .stairsList .desc {
+        font-size: 17px;
+        line-height: 24px;
+        max-width: 45vw;
+        margin-bottom: 45px;
+    }
+    .colorsSidebar {
+        max-width: 312px;
+    }
+    .colorItem {
+        width: 104px;
+        height: 104px;
+    }
+    .colorsSidebar .colorsSidebarTitle {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 22px;
+    }
+    .stars.image {
+        position: relative;
+        left: -40%;
+        width: 150%;
+        z-index: -1;
+    }
+    .stairsColor:not(:last-child) {
+        margin-bottom: 37px;
+    }
+    .colorsSidebar .btn {
+        position: relative;
+        margin-left: -60px;
+    }
+    .sectionWeight {
+        padding-top: 50px;
+    }
+    .sectionWeight .title {
+        margin-bottom: 43px;
+        line-height: 42px;
+    }
+    .sectionWeight .title span:nth-child(2) {
+        margin-left: 13%;
+    }
+    .sectionWeight .title span:nth-child(3) {
+        margin-left: 54%;
+    }
+    .sectionWeight .weight span {
+        font-size: 118px;
+        line-height: 106px;
+    }
+    .sectionWeight .desc {
+        max-width: 415px;
+        padding-left: 90px;
+    }
+    .sectionWeight .desc:after {
+        width: 305px;
+    }
+    .sectionWeight .weight:after {
+        width: 100px;
+        height: 100px;
+        bottom: 1rem;
+        right: 0rem;
+    }
+    .sectionWeight .desc {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .sectionWeight .weight p {
+        padding-left: 20px;
+    }
+    .sectionSafety {
+        padding-top: 55px;
+    }
+    .sectionSafety .title {
+        line-height: 42px;
+    }
+    .sectionSafety .title span:nth-child(2) {
+        margin-left: 4%;
+    }
+    .sectionSafetyWrap {
+        position: absolute;
+        top: 11%;
+        right: -33%;
+        max-width: 330px;
+    }
+    .sectionSafetyWrap .desc {
+        font-size: 17px;
+    }
+    .sectionSafety .image {
+        max-width: 480px;
+        margin-top: -35px;
+    }
+    .sectionSafety:after {
+        width: 235px;
+        height: 235px;
+        bottom: 22%;
+        left: 17%;
+    }
+    .sectionSafety:before {
+        width: 500px;
+        height: 50px;
+        transform: rotate(-63deg) translate(23rem, 10rem);
+    }
+    .sectionPersonal {
+        padding-top: 13px;
+    }
+    .sectionPersonal .title {
+        max-width: 465px;
+        margin-bottom: 88px;
+    }
+    .sectionPersonalAbout {
+        max-width: 310px;
+        margin-right: 37px;
+    }
+    .sectionPersonalAbout .desc {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sectionPersonalItem {
+        flex-direction: column;
+    }
+    .sectionPersonalItem  .data {
+        max-width: 186px;
+        width: 100%;
+    }
+    .sectionPersonalItem .image {
+        margin: 0 0 13px 0;
+    }
+    .sectionPersonalItem .name {
+        font-size: 20px;
+    }
+    .sectionPersonalItem .info {
+        font-size: 17px;
+    }
+    .sectionPersonalAbout .btn {
+        margin-top: 253px;
+    }
+    .sectionChangeStairs {
+        padding: 48px 0 0;
+    }
+    .sectionChangeStairs .title {
+        line-height: 42px;
+    }
+    .sectionChangeStairs .about {
+        width: 100%;
+    }
+    .sectionChangeStairs .about .desc {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 23px;
+        padding-left: 19%;
+        margin-top: 36px;
+    }
+    .sectionChangeStairs .stairs {
+        margin-right: -90px;
+    }
+    .sectionOffers {
+        padding: 50px 0 0;
+    }
+    .offer {
+        padding: 35px 0 45px;
+    }
+    .offer .title {
+        margin-bottom: 52px;
+    }
+    .offer .desc {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .offer .wrap .btn {
+        font-size: 15px;
+    }
+    .footer {
+        padding: 40px 0 15px;
+    }
+    .footerAbout .wrap {
+        flex-direction: column;
+    }
+    .footerAbout .logo {
+        margin-bottom: 30px;
+    }
+    .footerAbout .btn {
+        margin: 0 0 15px 0;
+        max-width: 165px;
+    }
+    .socialLinks .social:not(:last-child) {
+        margin-right: 7px;
+    }
+    .footerMenu {
+        max-width: 56%;
+        padding: 0;
+    }
+    .footerMenu a:nth-child(odd) {
+        width: 55%;
+    }
+    .footer {
+        align-items: flex-start;
+    }
+    .footerMenu a {
+        margin-bottom: 20px;
+    }
+    .footerAbout .address {
+        margin: 13px 0;
+    }
+    .wrapper {
+        padding: 0 20px;
+    }
+    .topMenuBody {
+        padding: 8px 0;
+    }
+    .topMenuBig a:not(:last-child) {
+        margin-bottom: 27px;
+    }
+    .topMenuBig a {
+        font-size: 42px;
+    }
+    .topMenuSmall {
+        max-width: 240px;
+    }
+    .topMenuSmall a {
+        font-size: 15px;
+    }
+    .topMenuSmall a:not(:last-child) {
+        margin: 18px 0 0;
+    }
+    .topMenuSmall .contacts .address, .topMenuSmall .contacts .phone {
+        font-size: 13px;
+        margin-top: 17px;
+    }
+    .sectionPersonal .wrap {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 700px){
+    :root {
+        --font-size-main: 12.5vw;
+        --font-size-main-desc: 24px;
+    }
+    .mainWrapper {
+        padding: 0 12px;
+    }
+    .topPanel .logo {
+        width: 100px;
+    }
+    .btn {
+        padding: 5px 13px;
+        font-size: 15px;
+        border: 2px solid var(--color-main);
+    }
+    .menu {
+        margin: 0 auto 0 18px;
+    }
+    .burger {
+        margin-right: 8px;
+    }
+    .topPanel.active .burger {
+        margin-right: 5px;
+    }
+    .header .mainTitle {
+        margin: 25px 0 0;
+        line-height: 0.95em;
+    }
+    .header .image {
+        top: -57px;
+        right: -70%;
+    }
+    .header .listItem span {
+        width: 11vw;
+        height: 11vw;
+    }
+    .header .list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .header .listItem {
+        width: 140px;
+    }
+    .listItem p {
+        font-size: 13px;
+    }
+    .header .description {
+        max-width: 100%;
+        margin-top: 40px;
+        line-height: 30px;
+    }
+    .section {
+        padding: 30px 0;
+    }
+    .section .desc {
+        font-size: 15px;
+    }
+    .section .mainTitle {
+        margin-bottom: 10px;
+    }
+    .section .wrap {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 29vw;
+    }
+    .sectionAbout .text {
+        position: absolute;
+        bottom: 0;
+    }
+    .sectionImage {
+        max-width: 100%;
+        height: 235px;
+        margin-top: 20px;
+    }
+    .sectionAbout .text {
+        position: absolute;
+        bottom: 0;
+    }
+    .sectionAbout .text {
+        font-size: 17px;
+    }
+    .section {
+        padding: 30px 0 50px;
+    }
+    .mainCards {
+        flex-direction: column;
+        margin: 0;
+    }
+    .mainCard.small {
+        max-width: 100%;
+    }
+    .mainCard {
+        margin: 0;
+    }
+    .mainCard {
+        padding: 11px;
+        margin-bottom: 15px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    li {
+        padding-left: 22px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .mainCards:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .sectionInfo .mainTitle {
+        font-size: 9vw;
+        line-height: 1em;
+    }
+    .imageWithText {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .sectionInfo .imageWithText p {
+        width: 100%;
+    }
+    .image.aroundRed {
+        max-width: 300px;
+        max-height: 300px;
+        height: 100%;
+    }
+    .aroundRed:before {
+        width: 120px;
+        height: 120px;
+        bottom: -20px;
+        left: -35px;
+    }
+    .image.aroundRed {
+        max-width: 300px;
+        max-height: 300px;
+        height: 100%;
+        margin-bottom: 25px;
+    }
+    .imageLeft {
+        max-width: 300px;
+        height: 300px;
+        margin-top: 33px;
+    }
+    .lineRed:before {
+        width: 349px;
+        height: 50px;
+        transform: rotate(64deg) translate(4rem, 11rem);
+    }
+    .sectionInfo .title.secondTitle span:nth-child(1) {
+        margin: 0 95px 0 0;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(2) {
+        margin-right: 43px;
+    }
+    .sectionInfo .thirdTitle {
+        line-height: 35px;
+    }
+    .sectionInfo .title.secondTitle {
+        padding: 15px 15px 0 0;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+    .sectionInfo .title.secondTitle span:nth-child(3) {
+        margin-right: 30px;
+    }
+    .sectionInfo .desc.right {
+        max-width: 100%;
+    }
+    .sectionInfo .imageRight {
+        margin: 30px 0 15px auto;
+        max-width: 300px;
+        height: 300px;
+    }
+    .sectionInfo .thirdTitle span:nth-child(2) {
+        margin-left: 60px;
+    }
+    .sectionInfo .title.thirdTitle {
+        margin-bottom: 12px;
+    }
+    .desc.center {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .sectionInfo .btnBig {
+        margin-top: 10px;
+        padding: 22px 0;
+    }
+    a.btnBig,
+    .sectionInfo .btnBig {
+        font-size: 15px;
+        padding: 15px 0;
+    }
+    .sectionEffect {
+        padding: 40px 0 0;
+    }
+    .sectionEffectElement .title {
+        padding: 15px 0 0 11px;
+        line-height: 30px;
+    }
+    .sectionEffectElement .title span:nth-child(2) {
+        margin-left: 30px;
+    }
+    .sectionEffectElement .arrow {
+        display: none;
+    }
+    .sectionEffectImage .image {
+        height: 335px;
+    }
+    .listElements {
+        padding-top: 15px;
+    }
+    .listElements .desc {
+        font-size: 15px;
+        margin: 0 0 25px 0;
+        line-height: 21px;
+    }
+    .listElement .name {
+        font-size: 13px;
+        max-width: 58px!important;
+    }
+    .listElement .image {
+        max-width: 50vw;
+        width: 100%;
+        height: 85px;
+    }
+    .sectionColors .title {
+        padding-left: 0;
+        margin-bottom: 15px;
+        line-height: 32px;
+    }
+    .sectionColors .wrap {
+        flex-direction: column;
+    }
+    .stairsList .desc {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+    .stars.image {
+        display: none;
+    }
+    .stairsColor:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .colorsSidebar .btn {
+        position: relative;
+        margin-left: 0;
+        max-width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .sectionWeight {
+        padding-top: 35px;
+    }
+    .sectionWeight .title {
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .sectionWeight .title span:nth-child(2) {
+        margin-left: 5%;
+    }
+    .sectionWeight .title span:nth-child(3) {
+        margin-left: 40%;
+    }
+    .sectionWeight .wrap {
+        flex-direction: column;
+    }
+    .sectionWeight .desc {
+        padding-left: 0;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .sectionWeight .desc:after {
+        display: none;
+    }
+    .sectionWeight .weight {
+        position: relative;
+        padding-left: 57px;
+        padding-top: 28px;
+    }
+    .sectionWeight .weight:after {
+        bottom: 1rem;
+        right: -3rem;
+    }
+    .sectionWeight .weight span {
+        margin-bottom: 0px;
+    }
+    .sectionWeight .weight p {
+        padding-left: 0;
+        line-height: 25px;
+    }
+    .sectionSafety {
+        padding-top: 40px;
+    }
+    .sectionSafety .title {
+        line-height: 29px;
+    }
+    .sectionSafety .title span:nth-child(2) {
+        margin-left: 11%;
+    }
+    .sectionSafety .title span:nth-child(3) {
+        margin-left: 71%;
+    }
+    .sectionSafety .image {
+        max-width: 480px;
+        margin-top: 0;
+        position: relative;
+        left: -80px;
+    }
+    .sectionSafetyWrap {
+        top: 4%;
+    }
+    
+    .sectionSafetyWrap .desc {
+        font-size: 15px;
+        padding: 0 70px 0 0;
+        line-height: 20px;
+    }
+    .sectionSafetyWrap .btn {
+        display: none;
+    }
+    .sectionSafety:after {
+        width: 175px;
+        height: 175px;
+        bottom: 16%;
+        left: 2%;
+    }
+    .sectionSafety:before {
+        width: 350px;
+        height: 30px;
+        transform: rotate(-63deg) translate(12rem, 3rem);
+    }
+    .sectionPersonal {
+        padding: 115px 0 70px;
+        position: relative;
+    }
+    .sectionPersonal .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+    }
+    .sectionPersonal .wrap {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sectionPersonalAbout {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .sectionPersonalAbout .desc {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 0 0 25px;
+    }
+    .sectionPersonalAbout .btn {
+        margin-top: 0;
+        position: absolute;
+    }
+    .sectionPersonalItem {
+        flex-direction: column;
+        padding: 43px 0 0 0;
+        align-items: flex-start;
+    }
+    .sectionPersonalItem .image {
+        margin: 0 0 15px 0;
+    }
+    .sectionPersonalItem .data {
+        max-width: 100%;
+        width: 100%;
+    }
+    .sectionPersonalAbout .btn {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        padding: 10px 0;
+    }
+    .sectionChangeStairs {
+        padding: 45px 0 0;
+    }
+    .sectionChangeStairs .wrap {
+        flex-direction: column;
+    }
+    .sectionChangeStairs .title {
+        line-height: 28px;
+    }
+    .sectionChangeStairs .title span:nth-child(3) {
+        margin-left: 35%;
+    }
+    .sectionChangeStairs .title span:nth-child(4) {
+        margin-left: 32%;
+    }
+    .sectionChangeStairs .about .desc {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        padding-left: 33%;
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+    .sectionChangeStairs .stairs {
+        margin-right: 0;
+    }
+    .stairs .image {
+        height: 83vw;
+    }
+    .sectionOffers {
+        padding: 40px 0 0;
+    }
+    .offer {
+        padding: 15px 0 0;
+    }
+    .offer .title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .offer .desc {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+    .offer .wrap {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .offer .wrap .btn:not(:last-child) {
+        margin-right: 10px;
+    }
+    .offer .wrap .btn {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .footerMenu {
+        max-width: 100%;
+        padding: 0;
+    }
+    .footerMenu a {
+        font-size: 13px;
+        padding: 0 0 0 15px;
+    }
+    .footerAbout {
+        padding-top: 18px;
+    }
+    .footerAbout .logo {
+        margin-bottom: 12px;
+    }
+    .footerAbout .wrap {
+        flex-direction: row;
+        align-items: center;
+    }
+    .footerAbout .btn {
+        margin: 0 14px 0 0;
+    }
+    .socialLinks .social:not(:last-child) {
+        margin-right: 0px;
+    }
+    .topMenuDrop {
+        height: 100vh;
+    }
+    .topMenuBig a:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .topMenuSmall .contacts .address, .topMenuSmall .contacts .phone {
+        margin-top: 0px;
+    }
+    .topMenuSmall .contacts {
+        margin-top: 60px;
+    }
+    .topMenuSmall {
+        margin-top: 30px;
+    }
+    .topMenuBig a {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .topMenuBody {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+}
