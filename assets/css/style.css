@@ -79,6 +79,15 @@ img {
     object-fit: cover;
     display: block;
 }
+#changeCity {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#changeCity img {
+    width: auto;
+    margin-left: 15px;
+}
 .image {
     position: relative;
 }
@@ -140,15 +149,22 @@ li:before {
     left: 0;
 }
 label {
-    border-bottom: 1px solid #F5F5F5;
-    padding: 0 5px;
+    border-bottom: 2px solid #d7d7d7;
+    display: flex;
+    margin-bottom: 37px;
 }
-input {
+input,
+textarea {
     border: 0;
     outline: none;
     width: 100%;
-    font-size: 17px;
-    padding: 12px 0;
+    padding: 25px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    resize: none;
+    overflow: hidden;
+    height: 75px;
 }
 label button {
     border: 0;
@@ -156,9 +172,18 @@ label button {
     background: transparent;
     cursor: pointer;
 }
-.innerPage .form {
+.innerPage .formSearch {
     margin: 40px 0 48px;
 } 
+.formSearch label {
+    padding: 0 5px;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0;
+}
+.formSearch input {
+    font-size: 17px;
+    padding: 12px 0;
+}
 .search {
     max-width: 320px;
     display: flex;
@@ -179,7 +204,7 @@ input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 /* Alphabet */
-.alphabet {
+.alphabet .list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -1038,7 +1063,7 @@ input:-webkit-autofill:active{
     border: 1px solid rgba(0, 0, 0, 0.24);
     padding: 20px;
     margin: 0 10px 20px;
-    max-width: 386px;
+    max-width: 31.5%;
     width: 100%;
 }
 
@@ -1066,4 +1091,114 @@ input:-webkit-autofill:active{
 }
 a.site {
     color: var(--color-red);
+}
+
+/* Страница Контакты */
+.contactSection {
+    padding: 60px 0 0;
+}
+.contactBlock {
+    width: 47%;
+}
+.contactBlock:not(:last-child) {
+    margin-right: 70px;
+    padding-right: 110px;
+}
+.contactBlock .title {
+    margin-bottom: 15px;
+}
+.contactItem a,
+.contactItem span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-main);
+}
+.contactItem .name {
+    margin-bottom: 13px;
+}
+.contactList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactItem {
+    width: 45%;    
+    margin-bottom: 50px
+}
+.map .desc {
+    display: block;
+    margin-top: 16px;
+}
+.contactSection .wrap {
+    padding-bottom: 60px;
+}
+.contactBlock .form {
+    padding-right: 60px;
+}
+
+/* Страница выбора Монтажников */
+.personalList {
+    display: flex;
+    margin: 0 -20px -30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.personalItem {
+    margin: 0 20px;
+    position: relative;
+    width: 21.5%;
+    padding-bottom: 60px;
+}
+.personalItem .btn {
+    display: none;
+    position: absolute;
+}
+
+.personalItem:hover .btn {
+    display: block;
+}
+.personalItem:before {
+    content: '';
+    display: block;
+    background: #fff;
+    border: 3px solid #000000;
+    width: 120%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    top: -27px;
+    left: -28px;
+    display: none;
+}
+.personalItem:hover::before {
+    display: block;
+}
+.personalItem .name {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 23px 0 10px;
+    word-break: break-word;
+}
+.personalItem .city {
+    margin-bottom: 8px;
+}
+.personalItem .icon {
+    margin-right:10px;
+}
+.personalItem .btn {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}
+.personalItem .image {
+    z-index: -2;
+}
+.personalItem:hover .image {
+    z-index: 0;
+}
+.countPersonal {
+    display: block;
+    margin: 52px 0 50px;
 }

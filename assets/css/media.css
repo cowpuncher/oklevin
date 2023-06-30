@@ -48,6 +48,12 @@
     .topMenuBig a {
         font-size: 60px;
     }
+    .cityContacts {
+        max-width: 30.5%;
+    }
+    .contactBlock:not(:last-child) {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 993px) {
@@ -522,6 +528,33 @@
     .sectionPersonal .wrap {
         justify-content: space-between;
     }
+    .contactList {
+        flex-direction: column;
+    }
+    .contactSection {
+        padding: 30px 0 0;
+    }
+    .contactBlock:not(:last-child) {
+        margin-right: 15px;
+    }
+    .contactItem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contactItem span br {
+        display: none;
+    }
+    .map {
+        height: 330px;
+    }
+    .contactSection .wrap {
+        padding-bottom: 90px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .cityContacts {
+        max-width: 46.5%;
+    }
 }
 @media screen and (max-width: 700px){
     :root {
@@ -538,6 +571,21 @@
         padding: 5px 13px;
         font-size: 15px;
         border: 2px solid var(--color-main);
+    }
+    .offerBtn {
+        border-color: var(--color-red);
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .innerOffer .offer {
+        padding: 24px 16px 20px;
+    }
+    .alphabet .list {
+        flex-wrap: nowrap;
+        width: 1665px;
+        overflow: auto;
     }
     .menu {
         margin: 0 auto 0 18px;
@@ -1011,5 +1059,68 @@
     .topMenuBody {
         padding: 20px 0;
         flex-direction: column;
+    }
+    .cityContacts {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .citySection .title {
+        margin-bottom: 20px;
+    }
+    .cityContacts .name {
+        font-size: 24px;
+    }
+    .cityContacts .timeWork {
+        margin: 20px 0 0;
+    }
+    .cityContacts .contacts {
+        margin-top: 25px;
+    }
+    .cityContacts .contacts a {
+        margin-bottom: 0px;
+    }
+    .contactSection {
+        padding: 20px 0 0;
+    }
+    .contactSection .wrap {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .contactBlock {
+        width: 100%;
+    }
+    .contactBlock:not(:last-child) {
+        margin-right: 0;
+        width: 100%;
+    }
+    .contactBlock.left {
+        margin-bottom: 25px;
+    }
+    .contactItem .name {
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+    .contactItem a, .contactItem span {
+        font-size: 17px;
+    }
+    .contactBlock .title br {
+        display: none;
+    }
+    input, textarea {
+        height: 50px;
+        padding: 13px 0;
+        font-size: 19px;
+    }
+    label {
+        border-bottom: 2px solid #d7d7d7;
+        display: flex;
+        margin-bottom: 28px;
+    }
+    .offerBtn {
+        width: 100%;
+        font-size: 17px;
+    }
+    .contactBlock .form {
+        padding-right: 0;
     }
 }

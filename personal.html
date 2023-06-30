@@ -52,7 +52,11 @@
         </div>
         <header class="header">
             <h1 class="mainTitle">
-                Где купить
+                Подбор <br> монтажника <br> 
+                <span id="changeCity">
+                    г. Ижевск 
+                    <img src="./assets/img/arrow-red.svg" alt="arrow">
+                </span>
             </h1>
         </header>
         <!-- 
@@ -60,175 +64,159 @@
         отступы у элементов на внутренних страницах 
         -->
         <main class="innerPage"> 
-            <div class="form">
-                <label class="search">
-                    <button type="button">
-                        <img src="./assets/img/search.svg" alt="search">
-                    </button>
-                    <input type="search" name="" id="search" placeholder="Поиск">
-                </label>
-            </div>
-            <section class="alphabet">
-                <a href="#" class="active">а</a>
-                <a href="#">б</a>
-                <a href="#">в</a>
-                <a href="#">г</a>
-                <a href="#">д</a>
-                <a href="#">е</a>
-                <a href="#">ё</a>
-                <a href="#">ж</a>
-                <a href="#">з</a>
-                <a href="#">и</a>
-                <a href="#">й</a>
-                <a href="#">к</a>
-                <a href="#">л</a>
-                <a href="#">м</a>
-                <a href="#">о</a>
-                <a href="#">п</a>
-                <a href="#">р</a>
-                <a href="#">с</a>
-                <a href="#">т</a>
-                <a href="#">у</a>
-                <a href="#">ф</a>
-                <a href="#">х</a>
-                <a href="#">ц</a>
-                <a href="#">ч</a>
-                <a href="#">ш</a>
-                <a href="#">щ</a>
-                <a href="#">ъ</a>
-                <a href="#">ы</a>
-                <a href="#">ь</a>
-                <a href="#">э</a>
-                <a href="#">ю</a>
-                <a href="#">я</a>
-            </section>
-            <section class="citySection">
-                <div class="title">
-                    Абакан
-                </div>
-                <div class="cityList">
-                    <div class="cityContacts">
-                        <div class="name">Стройбатыч</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+            <section class="personalSection">
+                <p class="countPersonal">24 монтажника</p>
+                <div class="personalList">
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-1.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
                         </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
-                    <div class="cityContacts">
-                        <div class="name">Лестницы оптторг</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-2.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
                         </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
-                    <div class="cityContacts">
-                        <div class="name">Дизайн Дизайныч</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-3.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
-                        </div>
+                        <div class="name">Константин Константинопольский</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
-                    <div class="cityContacts">
-                        <div class="name">Стройбатыч</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-4.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
                         </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
-                </div>
-            </section>
-            <section class="citySection">
-                <div class="title">
-                    Архангельск
-                </div>
-                <div class="cityList">
-                    <div class="cityContacts">
-                        <div class="name">Стройбатыч</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-1.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
                         </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
-                    <div class="cityContacts">
-                        <div class="name">Лестницы оптторг</div>
-                        <div class="address">Архангельск, ул. Воскресенская, д. 20, ТРК «Титан-Арена»</div>
-                        <div class="timeWork">
-                            <span>пн-пт 09:00 — 18:00</span>
-                            <span>сб, вс 10:00 — 17:00</span>  
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-2.jpg" alt="personal">
                         </div>
-                        <div class="contacts">
-                            <a href="tel:78119992233" class="phone">
-                                +7(812) 738-95-13
-                            </a>
-                            <a href="mailto:mail@mail.ru" class="mail">
-                                info@thelestnici.ru
-                            </a>
-                            <a href="www.site.ru" class="site">
-                                Titanlst.ru
-                            </a>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
                         </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
+                    </div>
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-3.jpg" alt="personal">
+                        </div>
+                        <div class="name">Константин Константинопольский</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
+                    </div>
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-4.jpg" alt="personal">
+                        </div>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
+                        </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
+                    </div>
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-1.jpg" alt="personal">
+                        </div>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
+                        </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
+                    </div>
+                    <div class="personalItem">
+                        <div class="image">
+                            <img src="./assets/img/personal-2.jpg" alt="personal">
+                        </div>
+                        <div class="name">Петр Васильев</div>
+                        <div class="city">г. Ижевск · Опыт 7 лет</div>
+                        <div class="wrap">
+                            <div class="icon">
+                                <img src="./assets/img/stairs.svg" alt="stairs">
+                            </div>
+                            12
+                        </div>
+                        <a href="#" class="btn">
+                            Написать мастеру
+                        </a>
                     </div>
                 </div>
+                <div class="pagi"></div>
             </section>
             <!-- 
             Здесь добавил к sectionOffers класс innerOffer
@@ -237,17 +225,14 @@
             -->
             <section class="sectionOffers innerOffer">
                 <div class="offer">
-                    <p class="desc">
-                        Мы еще не продаем тут свою продукцию
-                    </p>
                     <div class="title">
-                        Мы поможем с поиском
+                        Доверьте выбор нам
                     </div>
                     <span>
-                        Позвоним и расскажем о ближайшем к вам магазине, а если хотите, <br> поможем с доставкой и монтажом
+                        Расскажите о своей задаче и мы подберем монтажника <br> исключительно под ваш проект. Это бесплатно и быстро
                     </span>
                     <a href="#" class="btn offerBtn">
-                        Найти магазин
+                        Подобрать монтажника
                     </a>
                 </div>
             </section>
