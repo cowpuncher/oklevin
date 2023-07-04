@@ -54,6 +54,10 @@
     .contactBlock:not(:last-child) {
         padding-right: 0;
     }
+    .personalItem {
+        width: 20.5%;
+    }
+
 }
 
 @media screen and (max-width: 993px) {
@@ -549,6 +553,21 @@
     }
     .contactSection .wrap {
         padding-bottom: 90px;
+    }
+
+    .personalItem {
+        width: 27.5%;
+    }
+    .personalItem .name {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .personalItem:hover::before   {
+        display: none;
+    }
+    .personalItem .btn {
+        display: block;
+        position: relative;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1122,5 +1141,17 @@
     }
     .contactBlock .form {
         padding-right: 0;
+    }
+    .personalItem {
+        width: 40.5%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .personalItem {
+        width: 100%;
+    }
+    .personalItem .name {
+        font-size: 24px;
+        line-height: 30px;
     }
 }

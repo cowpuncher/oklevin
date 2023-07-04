@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="topPanel">
+            <a href="/" class="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Меню</span>
+            </div>
+            <button class="auth btn">Вход</button>
+        </div>
+        <div class="topMenu">
+            <div class="overlay"></div>
+            <div class="topMenuDrop">
+                <div class="wrapper">
+                    <div class="topMenuBody">
+                        <div class="topMenuBig">
+                            <a href="#">Дилерам и бизнесу</a>
+                            <a href="№">Строителям</a>
+                            <a href="№">Архитекторам</a>
+                        </div>
+                        <div class="topMenuSmall">
+                            <a href="#">Расчет стоимости</a>
+                            <a href="#">Подбор монтажников</a>
+                            <a href="#">Адреса дилеров</a>
+                            <a href="#">Контактная информация</a>
+                            <div class="contacts">
+                                <div class="address">
+                                    г. Ижевск, ул. Телегина, д.30/590
+                                </div>
+                                <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Добавил класс к header, так как на трехъ станицах есть баннер 
+            и заголовок приоберетает три цвета
+        -->
+        <header class="header headerInner">
+            <div class="banner">
+                <img src="./assets/img/banner-1.jpg" alt="banner">
+            </div>
+            <h1 class="mainTitle">
+                <div class="white">Умная <br> лестница</div> для <span>дилеров</span>
+            </h1>
+        </header>
+        <main>
+            
+            <section class="sectionExistence">
+                <div class="wrap">
+                    <div class="wrapBlock">
+                        <div class="title">
+                            <span>Всегда</span>
+                            <span>в наличии</span>
+                        </div>
+                        <p class="descSection">
+                            Все изделия всегда в наличии, а если у вас индивидуальный запрос, то срок изготовления займет не больше 2-х дней
+                        </p>
+                    </div>
+                    <div class="wrapBlock">
+                        <div class="tiles">
+                            <div class="tile"><img src="./assets/img/tile1.jpg" alt="tile"></div>
+                            <div class="tile"></div>
+                            <div class="tile">500+ <br> наименований <br> всегда на складе</div>
+                            <div class="tile"><img src="./assets/img/tile2.jpg" alt="tile"></div>
+                            <div class="tile"><img src="./assets/img/tile3.jpg" alt="tile"></div>
+                            <div class="tile"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionDelivery">
+                <div class="title">
+                    <span>Быстрая отгрузка</span>
+                    <span>и доставка</span>
+                </div>
+                <p class="descSection">
+                    Всегда в наличии со сроком поставки на ваш склад за 2 дня
+                </p>
+                <div class="deliveryList">
+                    <div class="deliveryItem">
+                        <span>Заявка</span>
+                        <p>Заполнение займет 7 минут</p>
+                    </div>
+                    <div class="deliveryItem">
+                        <span>Производство</span>
+                        <p>Изготовление занимает от 1 до 2 дней</p>
+                    </div>
+                    <div class="deliveryItem">
+                        <span>Доставка</span>
+                        <p>Отправим ТК, и она займет от 1 дня</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionCabinet">
+                <div class="title">
+                    <span>Личный кабинет</span>
+                    <span>с поддержкой</span>
+                </div>
+                <div class="wrap">
+                    <div class="image">
+                        <img src="./assets/img/lk.jpg" alt="lk">
+                    </div>
+                    <div class="about">
+                        <p class="descSection">Соединили в личном кабинете удобный функционал заказа и бронирования товаров</p>
+                        <a href="#" class="btn">
+                            Стать дилером
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionStudy">
+                <div class="title">
+                    <span>Обучение</span>
+                    <span>персонала</span>
+                </div>
+                <p class="descSection">
+                    Собрали базу знаний, в которой есть все необходимое для сотрудников, а также сделали курсы по обучению персонала 
+                </p>
+                <div class="image">
+                    <img src="./assets/img/study.jpg" alt="study">
+                </div>
+            </section>
+            <section class="sectionCalc">
+                <div class="title">
+                    <span class="red">Калькулятор </span>
+                    <span>и альбом готовых </span>
+                    <span>решений</span>
+                </div>
+                <div class="wrap">
+                    <div class="wrapBlock">
+                        <p class="descSection">
+                            Десятки продуманных решений с расчетами по ГОСТу и СНиПам, остается только выбрать готовый вариант или ввести параметры и посчитать
+                        </p>
+                    </div>
+                    <div class="wrapBlock">
+                        <div class="calc">
+                            <div class="count">22 515</div>
+                            <p class="desc">
+                                Одномаршевая лестница
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionSale">
+                <div class="title">
+                    <span>Персональные </span>
+                    <span>скидки</span>
+                </div>
+                <p class="descSection">
+                    Делаем скидки до 50% нашим партнерам от объема заказов
+                </p>
+                <div class="image">
+                    <img src="./assets/img/stairs-sale.svg" alt="">
+                </div>
+            </section>
+            <section class="sectionProfit">
+                <div class="title">
+                    <span>Чистая</span>
+                    <span>прибыль</span>
+                    <span>с одной лестницы</span>
+                </div>
+                <p class="descSection">
+                    Мы опросили более 100 дилеров, которые работают с нами и получили среднюю сумму заработка с одной лестницы
+                </p>
+                <div class="profit">
+                    ~ 25 000₽
+                </div>
+            </section>
+            <!-- 
+            Здесь добавил к sectionOffers класс innerOffer
+            так как на главной странице отличается отступ и размер шрифтов 
+            в отличии от внутренних страниц 
+            -->
+            <section class="sectionOffers innerOffer">
+                <div class="offer">
+                    <div class="title">
+                        Начни свой бизнес <br> или расширь продуктовую <br> линейку
+                    </div>
+                    <span>
+                        Парнерство даст макимально выгодные условия, доступ к личному кабинету <br> с калькулятором и чистый заработок от 75 т.р. с одной лестницы
+                    </span>
+                    <a href="#" class="btn offerBtn">
+                        Стать парнером
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footerAbout">
+                <a href="/" class="logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <div class="wrap">
+                    <a href="#" class="btn">
+                        Задать вопрос
+                    </a>
+                    <div class="socialLinks">                    
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/tlgrm.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="address">
+                        г. Ижевск, ул. Телегина, д.30/590
+                    </div>
+                    <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                </div>
+            </div>
+            <div class="footerMenu">
+                <a href="#" class="dots">Расчет стоимости</a>
+                <a href="#">Бизнесу</a>
+                <a href="#" class="dots">Подбор монтажников</a>
+                <a href="#">Строителям</a>
+                <a href="#">Адреса дилеров</a>
+                <a href="#">Архитекторам</a>
+                <a href="#">Контактная информация</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
