@@ -1604,3 +1604,116 @@ a.site {
     margin: 25px 0;
     max-width: 460px;
 }
+
+/* Секция албома архитектора */
+
+.sectionAlbum .wrapBlock:nth-child(2) {
+    margin-right: -40px;
+    width: 100%;
+    max-width: 515px;
+}
+.sectionAlbum .wrapBlock .image {
+    height: 680px;
+}
+.sectionAlbum .title span:nth-child(2) {
+    margin-left: 70px;
+}
+.sectionAlbum .descSection {
+    padding: 25px 70px 0 75px;
+}
+.sectionAlbum .desc {
+    font-size: 13px;
+    margin-top: 23px;
+}
+
+/* Секция албома архитектора */
+
+.sectionVisual {
+    padding-top: 100px;
+}
+.sectionVisual .title {
+    text-align: right;
+    padding-right: 70px;
+    margin-bottom: 20px;
+}
+.sectionVisual .title span:first-child {
+    margin-right: 38%;
+}
+.sectionVisual .wrapBock {
+    width: 50%;
+}
+.sectionVisual .wrapBock:first-child {
+    width: 49%;
+}
+.sectionVisual .wrapBock:nth-child(2) {
+    margin-left: 90px;
+}
+.sectionVisual .wrapButtons {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sectionVisual .wrapButtons .download {
+    border-color: var(--color-red);
+    color: #fff;
+    background: var(--color-red);
+}
+.sectionVisual .wrapButtons .btn {
+    padding: 11px 16px;
+    margin-right: 22px;
+    margin-bottom: 24px;
+}
+
+/* Секция вариации материалов */
+
+.sectionMaterial {
+    padding-top: 100px;
+}
+.sectionMaterial .title span:nth-child(2) {
+    margin-left: 75px;
+}
+.sectionMaterial .descSection {
+    padding: 0 0 0 ;
+}
+.sectionMaterial .descSection {
+    padding: 25px 0 0 75px;
+    max-width: 540px;
+}
+
+.materialWrapper {
+    margin: 0 -25px;
+}
+.materialWrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0;
+}
+.materialItem {
+    margin: 0 25px;
+}
+.materialItem span {
+    margin-bottom: 7px;
+    display: block;
+}
+.materialItem:nth-child(1) {
+    margin-left: 345px;
+    max-width: 260px;
+    width: 100%;
+}
+.materialItem:nth-child(2) {
+    margin-top: 90px;
+} 
+.materialItem:nth-child(3) {
+    margin-top: 175px;
+} 
+.materialItem:nth-child(4) {
+    margin-top: 210px;
+    margin-left: 100px;
+}
+.materialItem:nth-child(5) {
+    margin-top: 120px;
+} 
+.materialItem:nth-child(6) {
+    margin-top: 30px;
+} 

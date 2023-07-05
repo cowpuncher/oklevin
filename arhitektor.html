@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="topPanel">
+            <a href="/" class="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Меню</span>
+            </div>
+            <button class="auth btn">Вход</button>
+        </div>
+        <div class="topMenu">
+            <div class="overlay"></div>
+            <div class="topMenuDrop">
+                <div class="wrapper">
+                    <div class="topMenuBody">
+                        <div class="topMenuBig">
+                            <a href="#">Дилерам и бизнесу</a>
+                            <a href="№">Строителям</a>
+                            <a href="№">Архитекторам</a>
+                        </div>
+                        <div class="topMenuSmall">
+                            <a href="#">Расчет стоимости</a>
+                            <a href="#">Подбор монтажников</a>
+                            <a href="#">Адреса дилеров</a>
+                            <a href="#">Контактная информация</a>
+                            <div class="contacts">
+                                <div class="address">
+                                    г. Ижевск, ул. Телегина, д.30/590
+                                </div>
+                                <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Добавил класс к header, так как на трехъ станицах есть баннер 
+            и заголовок приоберетает три цвета
+        -->
+        <header class="header headerInner">
+            <div class="banner">
+                <img src="./assets/img/banner-3.jpg" alt="banner">
+            </div>
+            <h1 class="mainTitle">
+                <div class="white">Умная <br> лестница</div> для <span>архитекторов</span>
+            </h1>
+        </header>
+        <main>
+            
+            <section class="sectionAlbum">
+                <div class="wrap">
+                    <div class="wrapBlock">
+                        <div class="title">
+                            <span>Альбом</span> 
+                            <span>готовых решений</span> 
+                        </div>
+                        <p class="descSection">
+                            Десятки продуманных решений с расчетами по ГОСТу и СНиПам, остается только взять и применить в своем проект
+                        </p>
+                    </div>
+                    <div class="wrapBlock">
+                        <div class="image">
+                            <img src="./assets/img/stairs-album.jpg" alt="album">
+                        </div>
+                        <p class="desc">
+                            Двухмаршевая с поворотом на 180° <br> с деревянными ступенями и покраской <br> под венге
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionVisual">
+                <div class="title">
+                    <span>Готовая 3d</span>
+                    <span>визуализация</span>
+                </div>
+                <div class="wrap">
+                    <div class="wrapBock">
+                        <div class="image">
+                            <img src="./assets/img/stairs-visual.jpg" alt="visual">
+                        </div>
+                    </div>
+                    <div class="wrapBock">
+                        <p class="descSection">
+                            Визуализация позволит примерить лестницу в любой дизайн-проект за считанные минуты
+                        </p>
+                        <div class="wrapButtons">
+                            <a href="#" class="btn download">Скачать рендеры</a>
+                            <a href="#" class="btn">.IGS</a>
+                            <a href="#" class="btn">.VRML</a>
+                            <a href="#" class="btn">.WRZ</a>
+                            <a href="#" class="btn">.OBJ</a>
+                            <a href="#" class="btn">.3DS</a>
+                            <a href="#" class="btn">.DAE</a>
+                            <a href="#" class="btn">.FBX</a>
+                            <a href="#" class="btn">.PLY</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionMaterial">
+                <div class="title">
+                    <span>Сотни вариантов </span>
+                    <span>цветов и облицовки</span>
+                </div>
+                <p class="descSection">
+                    Сотни комбинаций цветов и облицовочных материалов в CAD библиотеке готовых к использованию
+                </p>
+                <div class="materialWrapper">
+                    <div class="materialWrap">
+                        <div class="materialItem">
+                            <span>Камень</span>
+                            <div class="image">
+                                <img src="./assets/img/color-1.jpg " alt="">
+                            </div>
+                        </div>
+                        <div class="materialItem">
+                            <span>Дерево</span>
+                            <div class="image">
+                                <img src="./assets/img/color-2.jpg " alt="">
+                            </div>
+                        </div>
+                        <div class="materialItem">
+                            <span>Бетон</span>
+                            <div class="image">
+                                <img src="./assets/img/color-3.jpg " alt="">
+                            </div>
+                        </div>
+                        <div class="materialItem">
+                            <span>Металл</span>
+                            <div class="image">
+                                <img src="./assets/img/color-4.jpg " alt="">
+                            </div>
+                        </div>
+                        <div class="materialItem">
+                            <span>Терассовая доска</span>
+                            <div class="image">
+                                <img src="./assets/img/color-5.jpg " alt="">
+                            </div>
+                        </div>
+                        <div class="materialItem">
+                            <span>Cтекло</span>
+                            <div class="image">
+                                <img src="./assets/img/color-6.jpg " alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 
+            Здесь добавил к sectionOffers класс innerOffer
+            так как на главной странице отличается отступ и размер шрифтов 
+            в отличии от внутренних страниц 
+            -->
+            <section class="sectionOffers innerOffer">
+                <div class="offer">
+                    <div class="title">
+                        Скорее в личный кабинет <br> качать материалы
+                    </div>
+                    <span>
+                        В личном кабинете будет доступ к файлам с 3d визуализацией, <br> материалам облицовки и альбому с готовыми решениями
+                    </span>
+                    <div class="wrap">
+                        <a href="#" class="btn offerBtn">
+                            Войти в кабинет
+                        </a>
+                        <a href="#" class="btn">
+                            Зарегистрироваться
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footerAbout">
+                <a href="/" class="logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <div class="wrap">
+                    <a href="#" class="btn">
+                        Задать вопрос
+                    </a>
+                    <div class="socialLinks">                    
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/tlgrm.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="address">
+                        г. Ижевск, ул. Телегина, д.30/590
+                    </div>
+                    <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                </div>
+            </div>
+            <div class="footerMenu">
+                <a href="#" class="dots">Расчет стоимости</a>
+                <a href="#">Бизнесу</a>
+                <a href="#" class="dots">Подбор монтажников</a>
+                <a href="#">Строителям</a>
+                <a href="#">Адреса дилеров</a>
+                <a href="#">Архитекторам</a>
+                <a href="#">Контактная информация</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
