@@ -57,7 +57,39 @@
     .personalItem {
         width: 20.5%;
     }
-
+    .calc .count {
+        color: #808080;
+        font-size: 120px;
+        font-weight: 700;
+    }
+    .deliveryList:before {
+        translate: -48px -60px;
+    }
+    .sectionSale .image {
+        margin: 25px auto 0 85px;
+    }
+    .profit {
+        font-size: 160px;
+    }
+    .profit:before {
+        width: 400px;
+        left: 27%;
+    }
+    .profit:after {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .sectionWiki .image {
+        width: 46vw;
+    }
+    .profit span {
+        padding: 0 0 0 23vw;
+        margin-top: -30px;
+    }
+    .materialItem:nth-child(1) {
+        margin-left: 24vw;
+    }
 }
 
 @media screen and (max-width: 993px) {
@@ -569,6 +601,343 @@
         display: block;
         position: relative;
     }
+
+    .headerInner .mainTitle {
+        margin: -16vw 0 0;
+    }
+    .headerInner {
+        padding-bottom: 57px;
+    }
+    .descSection {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .sectionExistence .descSection {
+        padding: 7px 90px 0 95px;
+    }
+    .sectionExistence .wrapBlock:first-child {
+        width: 62%;
+    }
+    .tile {
+        width: 140px;
+        height: 140px;
+        font-size: 15px;
+    }
+    .sectionDelivery {
+        padding: 60px 0 0;
+    }
+    .sectionDelivery .descSection {
+        width: 40%;
+        margin-top: 17px;
+    }
+    .deliveryItem:nth-child(1) {
+        margin-right: 0;
+    }
+    .deliveryList {
+        padding-top: 65px;
+    }
+    .deliveryItem {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 26px;
+        padding-left: 30%;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .deliveryItem span {
+        line-height: 43px;
+    }
+    .deliveryItem:not(:last-child) {
+        border-bottom: 1px solid var(--color-red);
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .deliveryItem:nth-child(2) {
+        margin-right: 0;
+        width: 100%;
+        padding-left: 23%;
+    }
+    .deliveryList:before {
+        translate: -25px -24px;
+        width: 510px;
+        height: 50px;
+    }
+    .sectionCabinet {
+        padding-top: 50px;
+    }
+    .sectionCabinet .title {
+        margin-bottom: 0;
+    }
+    .sectionCabinet .image {
+        width: 44%;
+    }
+    .sectionCabinet .about {
+        padding-left: 45px;
+        padding-top: 15px;
+    }
+    .sectionCabinet .btn {
+        margin-top: 15px;
+        font-size: 17px;
+        padding: 9px 20px;
+    }
+    .sectionStudy {
+        padding: 65px 0 0;
+    }
+    .sectionStudy .descSection {
+        width: 100%;
+        padding: 19px 0 0 95px;
+        max-width: 420px;
+    }
+    .sectionStudy .image {
+        max-width: 410px;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    .sectionStudy .image {
+        max-width: 53vw;
+        margin-left: auto;
+        margin-top: 15px;
+        height: 34vw;
+    }
+    .sectionCalc {
+        padding: 60px 0 200px;
+    }
+    .sectionCalc .descSection {
+        margin-left: 95px;
+        margin-top: 16px;
+    }
+    .sectionCalc .wrap {
+        flex-direction: column;
+    }
+    .calc {
+        margin: 30px 0 0;
+    }
+    .calc .desc {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    .calc:before, .calc:after {
+        width: 115px;
+        height: 115px;
+        background-size: 30px;
+    }
+    .calc:before {
+        top: -149%;
+        left: 49%;
+    }
+    .calc:after {
+        right: 4%;
+        bottom: -104%;
+    }
+    .sectionSale {
+        padding-right: 65px;
+    }
+    .sectionSale .title span:first-child {
+        margin-right: 155px;
+    }
+    .sectionSale .title span:last-child {
+        margin-right: 150px;
+    }
+    .sectionSale .descSection {
+        margin-top: 18px;
+        font-size: 20px;
+    }
+    .sectionSale .image {
+        margin: 0;
+        width: 49vw;
+        left: -37vw;
+        top: -4vw;
+    }
+    .sectionProfit {
+        padding: 35px 0;
+    }
+    .sectionProfit .title span:nth-child(2) {
+        margin-left: 55px;
+    }
+    .sectionProfit .title span:nth-child(3) {
+        margin-left: 100px;
+    }
+    .sectionProfit .descSection {
+        max-width: 425px;
+        margin-left: 95px;
+        margin-top: 16px;
+    }
+    .profit {
+        font-size: 120px;
+        margin: 35px 0 0;
+    }
+    .profit:before {
+        height: 30px;
+        bottom: -20px;
+        width: 420px;
+        left: 19%;
+    }
+    .profit:after {
+        width: 120px;
+        height: 120px;
+        bottom: -15%;
+        right: 0%;
+    }
+    .sectionDiscounts .tile:nth-child(1) {
+        font-size: 42px;
+    }
+    .sectionDiscounts .wrapBlock:first-child {
+        width: 65%;
+    }
+    .sectionDiscounts .wrapBlock:last-child {
+        width: 35%;
+    }
+    .sectionDiscounts .descSection {
+        max-width: 320px;
+        margin-top: 18px;
+    }
+    .sectionDiscounts .tile:nth-child(5) {
+        margin: 0;
+    }
+    .sectionDiscounts .tile:nth-child(4) {
+        font-size: 32px;
+        width: 120px;
+        height: 120px;
+    }
+    .sectionDiscounts .tile:nth-child(5) {
+        margin: -20px 0 auto auto;
+        width: 100px;
+        height: 100px;
+    }
+    .sectionDiscounts {
+        margin-bottom: -60px;
+    }
+    .sectionMontaj {
+        padding: 50px 0 0;
+    }
+    .sectionMontaj .wrapBlock:first-child {
+        width: 100%;
+    }
+    .sectionMontaj .descSection {
+        max-width: 263px;
+        margin-top: 13px;
+        margin-left: 55px;
+    }
+    .sectionWiki {
+        padding: 100px 0 0;
+    }
+    .sectionWiki .wrapBlock:nth-child(2) {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .sectionWiki .title span:first-child {
+        margin-left: -43%;
+    }
+    .sectionWiki .descSection {
+        margin: 20px 0 15px;
+        max-width: 310px;
+    }
+    .sectionWiki .btn {
+        padding: 8px 17px;
+    }
+    .sectionWiki .image {
+        width: 42vw;
+    }
+    .sectionWiki:after {
+        height: 50px;
+        width: 520px;
+        rotate: 27deg;
+        translate: -6% 11rem;
+    }
+    .sectionStudy {
+        padding: 60px 0 0;
+    }
+    .sectionStudy .image {
+        max-width: 47vw;
+    }
+    .sectionProfit {
+        padding: 60px 0;
+    }
+    .profit span {
+        display: none;
+    }
+    .sectionAlbum .title span:nth-child(2) {
+        margin-left: 55px;
+    }
+    .sectionAlbum .descSection {
+        padding: 17px 70px 0 56px;
+    }
+    .sectionAlbum .wrapBlock:nth-child(2) {
+        margin-right: -80px;
+    }
+    .sectionAlbum .wrapBlock .image {
+        height: 558px;
+    }
+    .sectionVisual {
+        padding-top: 60px;
+    }
+    .sectionVisual .title span:first-child {
+        margin-right: 33%;
+    }
+    .sectionVisual .title {
+        margin-bottom: 0;
+    }
+    .sectionVisual .wrapBock:first-child {
+        width: 44%;
+    }
+    .sectionVisual .wrapBock:nth-child(2) {
+        margin-left: 45px;
+    }
+    .sectionVisual .wrapBock .descSection {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        width: 100%;
+        padding: 18px 0 0 0;
+        max-width: 270px;
+    }
+    .sectionVisual .wrapButtons .btn {
+        padding: 6px 9px;
+        margin-right: 14px;
+        margin-bottom: 18px;
+        font-size: 13px;
+    }
+    .sectionVisual .wrapButtons {
+        margin-top: 37px;
+    }
+    .sectionMaterial {
+        padding-top: 90px;
+    }
+    .sectionMaterial .title span:nth-child(2) {
+        margin-left: 90px;
+    }
+    .sectionMaterial .descSection {
+        padding: 15px 0 0 90px;
+    }
+    .materialItem:nth-child(1) {
+        margin-left: 17vw;
+    }
+    .materialItem {
+        max-width: 23%;
+        margin: 0 20px;
+    }
+    .materialWrap {
+        padding: 30px 0;
+    }
+    .materialItem:nth-child(2) {
+        margin-top: 30px;
+    }
+    .materialItem:nth-child(3) {
+        margin-top: 60px;
+    }
+    .materialItem:nth-child(4) {
+        margin-top: 85px;
+        margin-left: 25px;
+    }
+    .materialItem:nth-child(5) {
+        margin-top: 55px;
+    }
+    .materialItem:nth-child(6) {
+        margin-top: 25px;
+    }
+
 }
 @media screen and (max-width: 900px) {
     .cityContacts {
@@ -1144,6 +1513,385 @@
     }
     .personalItem {
         width: 40.5%;
+    }
+    .banner {
+        height: 73vw;
+    }
+    .headerInner .mainTitle {
+        margin: -25vw 0 0;
+    }
+    .headerInner {
+        padding-bottom: 30px;
+    }
+    .descSection {
+        line-height: 19px;
+        font-size: 15px;
+    }
+    .sectionExistence .title span:nth-child(2) {
+        margin-left: 20px;
+    }
+    .sectionExistence .wrap {
+        flex-direction: column;
+    }
+    .sectionExistence .descSection {
+        padding: 15px 45px 0 20px;
+    }
+    .sectionExistence .wrapBlock:first-child {
+        width: 100%;
+    }
+    .tiles {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 25px;
+    }
+    .tile {
+        width: 31vw;
+        height: 31vw;
+        font-size: 13px;
+    }
+    .tile:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+    .tile:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+    .tile:nth-child(3) { grid-area: 1 / 2 / 2 / 3; }
+    .tile:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+    .tile:nth-child(5) { grid-area: 1 / 3 / 2 / 4; }
+    .tile:nth-child(6) { grid-area: 2 / 3 / 3 / 4; }
+
+    .sectionDelivery {
+        padding: 30px 0 0;
+    }
+    .sectionDelivery .title span:nth-child(1) {
+        margin-left: 6%;
+    }
+    .sectionDelivery .descSection {
+        width: 71%;
+        margin-top: 12px;
+    }
+    .deliveryList:before {
+        translate: -2px -105px;
+        width: 340px;
+        height: 30px;
+        rotate: -32deg;
+        z-index: -1;
+    }
+    .deliveryList {
+        padding-top: 20px;
+    }
+    .deliveryItem {
+        padding-left: 0!important;
+        font-size: 15px;
+        width: 100%;
+    }
+    .deliveryItem span {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .deliveryItem:not(:last-child) {
+        padding-bottom: 16px;
+    }
+    .deliveryItem:nth-child(3) {
+        margin-right: 0;
+        padding: 0;
+    }
+    .sectionCabinet {
+        padding-top: 15px;
+    }
+    .sectionCabinet .title span:nth-child(1) {
+        margin-right: 26%;
+    }
+    .sectionCabinet .title span:nth-child(2) {
+        margin-right: 29%;
+    }
+    .sectionCabinet .wrap {
+        flex-direction: column;
+    }
+    .sectionCabinet .image {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .sectionCabinet .about {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .sectionCabinet .btn {
+        text-align: center;
+        display: block;
+        width: 100%;
+        max-width: 175px;
+        margin-left: auto;
+    }
+    .sectionStudy {
+        padding: 55px 0 0;
+    }
+    .sectionStudy .descSection {
+        width: 100%;
+        padding: 15px 0 0 40px;
+        max-width: 420px;
+    }
+    .sectionStudy .image {
+        max-width: 82vw;
+        height: 62vw;
+    }
+    .sectionCalc {
+        padding: 25px 0 75px;
+    }
+    .sectionCalc .descSection {
+        margin-left: 40px;
+        margin-top: 16px;
+    }
+    .calc .count {
+        font-size: 80px;
+    }
+    .calc {
+        margin: 90px 30px 0 0;
+    }
+    .calc .desc {
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .calc:before, .calc:after {
+        width: 60px;
+        height: 60px;
+        background-size: 17px;
+    }
+    .calc:before {
+        top: -69%;
+        left: -24%;
+    }
+    .calc:after {
+        right: -12%;
+        bottom: -47%;
+    }
+    .sectionSale {
+        padding-right: 0;
+    }
+    .sectionSale .title span:first-child {
+        margin-right: 110px;
+    }
+    .sectionSale .title span:last-child {
+        margin-right: 209px;
+    }
+    .sectionSale .descSection {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .sectionSale .image {
+        margin: 0;
+        width: 100%;
+        left: 0;
+        top: 7vw;
+    }
+    .sectionProfit {
+        padding: 50px 0;
+    }
+    .sectionProfit .title span:nth-child(2) {
+        margin-left: 20px;
+    }
+    .sectionProfit .title span:nth-child(3) {
+        margin-left: 40px;
+    }
+    .sectionProfit .descSection {
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    .profit {
+        font-size: 60px;
+        margin: 25px 0 0;
+    }
+    .profit:before {
+        height: 20px;
+        bottom: -13px;
+        width: 200px;
+        left: 12%;
+    }
+    .profit:after {
+        width: 80px;
+        height: 80px;
+        bottom: -34%;
+        right: -3%;
+    }
+    .sectionOffers {
+        padding: 0;
+    }
+    .sectionDiscounts .wrap {
+        flex-direction: column;
+    }
+    .sectionDiscounts .wrapBlock:first-child {
+        width: 100%;
+    }
+    .sectionDiscounts .descSection {
+        max-width: 285px;
+        margin-top: 15px;
+        margin-left: 22px;
+    }
+    .sectionDiscounts .tile:nth-child(1) {
+        width: 36vw;
+        height: 36vw;
+    }
+    .sectionDiscounts .tile:nth-child(4) {
+        width: 31vw;
+        height: 31vw;
+    }
+    .sectionDiscounts .tile:nth-child(5) {
+        margin: auto 0 0;
+        width: 25vw;
+        height: 25vw;
+    }
+    .sectionDiscounts {
+        margin-bottom: 0;
+    }
+    .sectionMontaj .wrap {
+        align-items: flex-start;
+    }
+    .sectionMontaj {
+        padding: 15px 0 0;
+    }
+    .sectionMontaj .title span:nth-child(2) {
+        margin-left: 20px;
+    }
+    .sectionMontaj .descSection {
+        max-width: 237px;
+        margin-top: 13px;
+        margin-left: 18px;
+    }
+    .sectionMontaj .wrapBlock:last-child {
+        width: 40vw;
+        margin-top: 35px;
+    }
+    .sectionWiki {
+        padding: 25px 0 0;
+    }
+    .sectionWiki .wrap {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        padding-left: 40px;
+    }
+    .sectionWiki .wrapBlock {
+        width: 100%;
+    }
+    .sectionWiki .title span:first-child {
+        margin-left: -13%;
+    }
+    .sectionWiki .descSection {
+        margin: 12px 0 15px;
+        max-width: 290px;
+    }
+    .sectionWiki .image {
+        width: 100%;
+        margin-top: 20px;
+        height: 61vw;
+    }
+    .sectionWiki:after {
+        rotate: 27deg;
+        translate: 20% 26rem;
+    }
+    .sectionStudy {
+        padding: 25px 0 0;
+    }
+    .sectionStudy .descSection {
+        width: 100%;
+        padding: 6px 0 0 40px;
+        max-width: 244px;
+    }
+    .sectionStudy .image {
+        height: 62vw;
+        margin-top: 28px;
+    }
+    .sectionAlbum .wrap {
+        flex-direction: column;
+    }
+    .sectionAlbum .title span:nth-child(2) {
+        margin-left: 20px;
+    }
+    .sectionAlbum .descSection {
+        padding: 15px 70px 0 20px;
+    }
+    .sectionAlbum .wrapBlock:nth-child(2) {
+        margin-right: 0;
+    }
+    .sectionAlbum .wrapBlock .image {
+        height: 75vw;
+        margin-top: 20px;
+    }
+    .sectionVisual {
+        padding-top: 50px;
+    }
+    .sectionVisual .title span:first-child {
+        margin-right: 28%;
+    }
+    .sectionVisual .title {
+        padding-right: 100px;
+    }
+    .sectionVisual .wrap {
+        flex-direction: column;
+    }
+    .sectionVisual .wrapBock:first-child {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .sectionVisual .wrapBock,
+    .sectionVisual .wrapBock .descSection {
+        width: 100%;
+        max-width: 100%;
+    }
+    .sectionVisual .wrapBock:nth-child(2) {
+        margin-left: 0;
+    }
+    .sectionVisual .wrapButtons .btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .sectionMaterial {
+        padding-top: 15px;
+    }
+    .sectionMaterial .title span:nth-child(2) {
+        margin-left: 20px;
+    }
+    .sectionMaterial .descSection {
+        padding: 15px 0 0 20px;
+    }
+    .materialItem:nth-child(1) {
+        margin-left: 25px;
+    }
+    .materialItem {
+        max-width: 25%;
+        margin: 0 10px;
+    }
+    .materialWrap {
+        padding: 20px 0;
+    }
+    .materialItem span {
+        font-size: 13px;
+    }
+    .materialItem:nth-child(2) {
+        margin-top: 20px;
+    }
+    .materialItem:nth-child(3) {
+        margin-top: 40px;
+    }
+    .materialItem:nth-child(4) {
+        margin-top: 67px;
+        margin-left: 25px;
+    }
+    .materialItem:nth-child(5) {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .popupBody {
+        padding: 12px;
+    }
+    input, textarea,.select-selected, label.labelCheckbox  {
+        height: 50px;
+        padding: 13px 0;
+        font-size: 15px;
+    }
+    label.labelCheckbox span {
+        width: 24px;
+        height: 24px;
     }
 }
 @media screen and (max-width: 450px) {

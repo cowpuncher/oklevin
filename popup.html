@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="topPanel">
+            <a href="/" class="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Меню</span>
+            </div>
+            <button class="auth btn">Вход</button>
+        </div>
+        <div class="topMenu">
+            <div class="overlay"></div>
+            <div class="topMenuDrop">
+                <div class="wrapper">
+                    <div class="topMenuBody">
+                        <div class="topMenuBig">
+                            <a href="#">Дилерам и бизнесу</a>
+                            <a href="№">Строителям</a>
+                            <a href="№">Архитекторам</a>
+                        </div>
+                        <div class="topMenuSmall">
+                            <a href="#">Расчет стоимости</a>
+                            <a href="#">Подбор монтажников</a>
+                            <a href="#">Адреса дилеров</a>
+                            <a href="#">Контактная информация</a>
+                            <div class="contacts">
+                                <div class="address">
+                                    г. Ижевск, ул. Телегина, д.30/590
+                                </div>
+                                <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <h1 class="mainTitle">
+               Попапы
+            </h1>
+        </header>
+        <!-- 
+        Здесь добавил innerPage к main так как нужны 
+        отступы у элементов на внутренних страницах 
+        -->
+        <main class="innerPage"> 
+            
+            <section style="margin-top: 150px;">
+                <div class="popupList">
+                    <a href="" class="popupBtn btn" id="popup-1">
+                        Подбор монтажника
+                    </a>
+                </div>
+            </section>
+            <section class="popups">
+
+                <div class="popupModal" id="popupModal-1">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <form class="form">
+                                <div class="title">
+                                    Подбор монтажника
+                                </div>
+                                <label class="label">
+                                    <input type="text" placeholder="Как вас зовут">
+                                </label>
+                                <label class="label">
+                                    <input type="phone" placeholder="Телефон">
+                                </label>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="">Какую лестницу нужно смонтировать</option>
+                                        <option value="">Обычная</option>
+                                        <option value="">Волшебная</option>
+                                    </select>
+                                </div>
+                                <label class="labelCheckbox">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </div>
+                                    Требуется облицовка лестницы
+                                </label>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="">Материал облицовки</option>
+                                        <option value="">Обычная</option>
+                                        <option value="">Волшебная</option>
+                                    </select>
+                                </div>
+                                <label class="label">
+                                    <input type="text" placeholder="Город">
+                                </label>
+                                <button class="btn offerBtn">
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- 
+            Здесь добавил к sectionOffers класс innerOffer
+            так как на главной странице отличается отступ и размер шрифтов 
+            в отличии от внутренних страниц 
+            -->
+            <section class="sectionOffers innerOffer">
+                <div class="offer">
+                    <p class="desc">
+                        Мы еще не продаем тут свою продукцию
+                    </p>
+                    <div class="title">
+                        Мы поможем с поиском
+                    </div>
+                    <span>
+                        Позвоним и расскажем о ближайшем к вам магазине, а если хотите, <br> поможем с доставкой и монтажом
+                    </span>
+                    <a href="#" class="btn offerBtn">
+                        Найти магазин
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footerAbout">
+                <a href="/" class="logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <div class="wrap">
+                    <a href="#" class="btn">
+                        Задать вопрос
+                    </a>
+                    <div class="socialLinks">                    
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/tlgrm.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/img/wapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="address">
+                        г. Ижевск, ул. Телегина, д.30/590
+                    </div>
+                    <a href="tel:+78003331580" class="phone">+7 (800) 333-15-80</a>
+                </div>
+            </div>
+            <div class="footerMenu">
+                <a href="#" class="dots">Расчет стоимости</a>
+                <a href="#">Бизнесу</a>
+                <a href="#" class="dots">Подбор монтажников</a>
+                <a href="#">Строителям</a>
+                <a href="#">Адреса дилеров</a>
+                <a href="#">Архитекторам</a>
+                <a href="#">Контактная информация</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

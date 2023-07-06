@@ -76,6 +76,11 @@ a.btnBig {
     color: var(--color-main);
     text-decoration: none;
 }
+.sectionOffers.innerOffer .btn {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
 img {
     width: 100%;
     height: 100%;
@@ -212,6 +217,97 @@ input:-webkit-autofill:active{
     font-size: 20px;
     line-height: 26px;
 }
+label.labelCheckbox {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-main);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+label.labelCheckbox input[type='checkbox'] {
+    display: none;
+}
+label.labelCheckbox .checkbox {
+    position: relative;
+    margin-right: 12px;
+}
+label.labelCheckbox span {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-red);
+    border-radius: 4px;
+}
+label.labelCheckbox input:checked ~ span {
+    background: var(--color-red) url(../img/check.svg) no-repeat 50% 50%;
+}
+/*ANCHOR --- Кастомизированный селект */
+.customSelect {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #d7d7d7;
+    
+    margin-bottom: 37px;
+}
+.customSelect select {
+    display: none;
+}
+.select-selected {
+    background-color: transparent;
+    color: #808080;
+    padding: 25px 0;
+    height: 75px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    line-height: 26px;
+}
+.select-selected:after {
+    position: absolute;
+    content: url(../img/arrow-dropdown.svg);
+    display: block;
+    top: 50%;
+    right: 0;
+    transition: all .3s ease;
+    -webkit-transform: translate(0, -40%);
+       -moz-transform: translate(0, -40%);
+        -ms-transform: translate(0, -40%);
+         -o-transform: translate(0, -40%);
+            transform: translate(0, -40%);
+}
+.select-items div {
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+}
+.select-items div:hover {
+    color: #ffffff;
+}
+.select-items {
+    position: absolute;
+    background: var(--color-grey);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.same-as-selected {
+    background-color: var(--color-0);
+    color: var(--color-11);
+}
+.select-selected.select-arrow-active:after {
+    rotate: -180deg;
+    translate: 0 -80%;
+}
+
 /* Alphabet */
 .alphabet .list {
     display: flex;
@@ -273,6 +369,105 @@ input:-webkit-autofill:active{
 }
 .topPanel.active  .burger {
     margin-right: 9px;
+}
+/* Popups */
+.overlayPopup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000063;
+    z-index: -99999;
+    opacity: 0;
+    transition: all .2s ease;
+}
+.closeBtnPopup img {
+    width: auto;
+    height: auto;
+}
+.closeBtnPopup {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+}
+.popupModal.active .overlayPopup {
+    opacity: 1;
+    z-index: 10;
+}
+.popup {
+    position: fixed;
+    max-width: 650px;
+    z-index: 11;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+    z-index: -99999;
+    transition: all .2s ease;
+}
+.popupModal.active .popup {
+    opacity: 1;
+    z-index: 10;
+}
+.animateLines {
+    display: flex;
+}
+.animateLine {
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    background: #fff;
+    translate: 0% 100%;
+    transition: all 1s linear;
+}
+.animateLine:before {
+    content: '';
+    display: block;
+    background: var(--color-red);
+    width: 100%;
+    height: 300px;
+    top: 0;
+    position: absolute;
+    translate: 0% -100%;
+}
+.popupModal.active .animateLine {
+    translate: 0% 0%;
+}
+.animateLine:nth-child(1) {
+    translate: 0% 300%;
+}
+.animateLine:nth-child(2) {
+    translate: 0% 250%;
+}
+.animateLine:nth-child(3) {
+    translate: 0% 200%;
+}
+.animateLine:nth-child(4) {
+    translate: 0% 100%;
+}
+.popupBody {
+    translate: 0% 100%;
+    height: 100vh;
+    padding: 75px;
+}
+.popupModal.active .popupBody {
+    translate: 0% -100%;
+    transition: all 1.8s ease;
+    overflow: auto;
+}
+.form .title {
+    margin-bottom: 41px;
+}
+/* Скрол */
+.popupBody::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--color-grey);
+}
+.popupBody::-webkit-scrollbar-thumb {
+    background-color: var(--color-red);
 }
 /* Dropmenu */
 
@@ -1691,14 +1886,15 @@ a.site {
 }
 .materialItem {
     margin: 0 25px;
+    max-width: 20.5%;
 }
 .materialItem span {
     margin-bottom: 7px;
     display: block;
+    font-size: 17px;
 }
 .materialItem:nth-child(1) {
     margin-left: 345px;
-    max-width: 260px;
     width: 100%;
 }
 .materialItem:nth-child(2) {
