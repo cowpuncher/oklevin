@@ -44,11 +44,13 @@ function ready() {
         let popup = document.getElementById(el);
         popup.classList.remove('active');
     }
-    
-    document.getElementById('popup-1').addEventListener('click', e => {
-        e.preventDefault();
-        activePopupUpdate('#popupModal-1');//активировать pop-up
-    });    
+
+    if(popupModal.length > 0) {
+        document.getElementById('popup-1').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-1');//активировать pop-up
+        });    
+    }
     //---------------------
 
     // --------- Кастомовые селекты на странице
@@ -74,8 +76,6 @@ function ready() {
                 c = document.createElement("div");
                 c.innerHTML = selElmnt.options[j].innerHTML;
                 c.classList.add('status');
-                c.classList.add(selElmnt.options[j].dataset.status);
-                console.log(c);
                 c.addEventListener("click", function(e) {
                     /* When an item is clicked, update the original select box,
                     and the selected item: */
@@ -139,7 +139,56 @@ function ready() {
     customSelect('customSelect', 0);
 
 
+    let placeholder = document.querySelectorAll('.placeholder');
+    let inputs = document.querySelectorAll('.label input');
+    let popups = document.querySelector('.popups');
 
+    // placeholder.forEach(element => {
+    //     element.addEventListener('click', e => {
+    //         e.currentTarget.classList.add('active')
+    //     })
+    // });
+    document.addEventListener('click', e => {
+        let curEl = e.target;
+        if(curEl.classList.contains('placeholder')) {
+            if(curEl.nextElementSibling.value !== '' || !curEl.closest('label').querySelector('.placeholder').classList.contains('active')) {
+                curEl.classList.add('active');
+                console.log('test');
+            }
+            
+            //if(curEl.nextElementSibling.value !== '' || curEl.classList.contains('placeholder'))
+        } else {
+            inputs.forEach(input => {
+                if(input.value === '') {
+                    for(var i = 0; i < inputs.length; i++) {
+                        if(inputs[i].closest('label').querySelector('.placeholder').classList.contains('active')) {
+                            inputs[i].closest('label').querySelector('.placeholder').classList.remove('active');
+                        }
+                    }                    
+                }
+            });
+        }
+        inputs.forEach(input => {
+            if(input.value === '') {
+                for(var i = 0; i < inputs.length; i++) {
+                    // if(inputs[i].closest('label').querySelector('.placeholder').classList.contains('active')) {
+                    //     inputs[i].closest('label').querySelector('.placeholder').classList.remove('active');
+                    // }
+                }
+                
+                // if(input.closest('label').querySelector('.placeholder')) {
+                //     console.log(input.closest('label').querySelector('.placeholder').classList.contains('.active'));
+                //     if(input.closest('label').querySelector('.placeholder').classList.contains('.active')) {
+                //         input.closest('label').querySelector('.placeholder').classList.remove('active');
+                //     }
+                // }
+                //if(input.closest('label').querySelector('.placeholder')) {
+                //    input.closest('label').querySelector('.placeholder').classList.remove('active');
+                //}
+                //input.closest('label').querySelector('.placeholder').classList.remove('active');
+            }
+        });
+    })
 }
 
 document.addEventListener("DOMContentLoaded", ready);
