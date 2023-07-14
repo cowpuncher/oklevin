@@ -76,6 +76,12 @@ a.btnBig {
     color: var(--color-main);
     text-decoration: none;
 }
+.reg.active {
+    padding-left: 37px;
+    color: var(--color-red);
+    border: 3px solid var(--color-red);
+    background: url(../img/check-btn.svg) no-repeat 6% 50%;
+}
 .sectionOffers.innerOffer .btn {
     align-items: center;
     font-size: 20px;
@@ -272,6 +278,163 @@ label.labelCheckbox input:checked ~ span {
     border: 1px solid var(--color-red);
     filter: contrast(1);
 }
+
+/*
+
+*/
+.inputDinamicWrap {
+    margin-bottom: 37px;
+}
+.inputDinamic {
+    position: relative;    
+    border-bottom: 2px solid #d7d7d7;
+}
+.inputDinamic label{
+    position: absolute;
+    top: 21px;
+    border: 0;
+    cursor: text;
+    font-size: 20px;
+    font-weight: 500;
+    translate: 0 5px;
+    color: #808080;
+    z-index: 1;
+}
+.inputDinamic input:focus + label,.inputDinamic input:not(:placeholder-shown) + label{
+    opacity:1;
+    /* transform: scale(.9) translateY(-100%) translateX(-10px); */
+    /* transform: scale(0.75) translateY(-190%) translateX(-21px); */
+    font-size: 15px;
+    top: -13px;
+    color:#000;
+    z-index: 2;
+}
+.inputDinamic input:focus{
+    outline-color: transparent;
+}
+.inputDinamic input{
+    width:100%;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+.inputDinamic label,.inputDinamic input{
+    transition: all 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 1;
+}
+.customSelectPlaceholder {
+    position: absolute;
+    color: #808080;
+    top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 0;
+    transition: all .3s linear;
+    z-index: -1;
+}
+.customSelectPlaceholder.active {
+    color:#000;
+    position: absolute;
+    top: -8px;
+    font-size: 15px;
+    opacity: 1;
+    z-index: 0;
+}
+.inputDinamic span {
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    font-size: 15px;
+    color: #808080;
+}
+.inputDinamicWrap .inputDinamicTextBottom {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+.wrapBtn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+.wrapBtn .btn {
+    margin: 0 5px 12px;
+}
+.formText {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.formText a,
+.policy a {
+    color: var(--color-red);
+}
+.policy {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 36px;
+}
+span.btnEye {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../img/eye-open.svg) no-repeat 50%  50%;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    z-index: 2;
+    cursor: pointer;
+    transform: translate(0, -85%);
+}
+span.btnEye.active {
+    background: url(../img/eye-close.svg) no-repeat 50%  50%;
+}
+
+/* Загрузка файла  */
+.input-file {
+	position: relative;
+	border: 0;
+    display: block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+    color: var(--color-main);
+    border: 3px solid var(--color-main);
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+/* Hover/active */
+.input-file:hover span {
+	
+}
+.input-file:active span {
+	
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
 /*ANCHOR --- Кастомизированный селект */
 .customSelect {
     position: relative;
@@ -498,7 +661,7 @@ label.labelCheckbox input:checked ~ span {
     transition: all 1.8s ease;
     overflow: auto;
 }
-.form .title {
+.popupBody .title {
     margin-bottom: 41px;
 }
 /* Скрол */

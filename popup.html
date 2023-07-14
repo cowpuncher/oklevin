@@ -60,16 +60,44 @@
         отступы у элементов на внутренних страницах 
         -->
         <main class="innerPage"> 
-            
+            <style>
+                .popupBtn {
+                    margin-bottom: 15px;
+                }
+            </style>
             <section style="margin-top: 150px;">
                 <div class="popupList">
                     <a href="" class="popupBtn btn" id="popup-1">
                         Подбор монтажника
                     </a>
+                    <a href="" class="popupBtn btn" id="popup-2">
+                        Заявка на монтаж
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-3">
+                        Вход в кабинет
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-4">
+                        Сброс пароля
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-5">
+                        Новый пароль
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-6">
+                        Регистрация
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-7">
+                        Регистрация дилер
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-8">
+                        Регистрация архитектор
+                    </a>
+                    <a href="" class="popupBtn btn" id="popup-9">
+                        Регистрация монтажника
+                    </a>
                 </div>
             </section>
             <section class="popups">
-
+                <!--Подбро монтажников-->
                 <div class="popupModal" id="popupModal-1">
                     <div class="overlayPopup"></div>
                     <div class="popup">
@@ -83,24 +111,29 @@
                             <span class="closeBtnPopup">
                                 <img src="./assets/img/close.svg" alt="close">
                             </span>
+                            <div class="title">
+                                Подбор монтажника
+                            </div>
                             <form class="form">
-                                <div class="title">
-                                    Подбор монтажника
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="name" placeholder=" "/>
+                                        <label>Как вас зовут</label>
+                                    </div>
                                 </div>
-                                <label class="label">
-                                    <div class="placeholder">Как вас зовут</div>
-                                    <input type="text">
-                                </label>
-                                <label class="label">
-                                    <div class="placeholder">Телефон</div>
-                                    <input type="phone">
-                                </label>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="phone" name="phone" placeholder=" "/>
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>
                                 <div class="customSelect">
                                     <select>
                                         <option value="">Какую лестницу нужно смонтировать</option>
                                         <option value="">Обычная</option>
                                         <option value="">Волшебная</option>
                                     </select>
+                                    <div class="customSelectPlaceholder">Какую лестницу нужно смонтировать</div>
                                 </div>
                                 <label class="labelCheckbox">
                                     <div class="checkbox">
@@ -115,10 +148,90 @@
                                         <option value="">Обычная</option>
                                         <option value="">Волшебная</option>
                                     </select>
+                                    <div class="customSelectPlaceholder">Материал облицовки</div>
+                               </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="city" placeholder=" "/>
+                                        <label>Город</label>
+                                    </div>
                                 </div>
-                                <label class="label">
-                                    <div class="placeholder">Город</div>
-                                    <input type="text">
+                                <button class="btn offerBtn">
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Заявка на монтаж-->
+                <div class="popupModal" id="popupModal-2">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Заявка на монтаж
+                            </div>                            
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="name" placeholder=" "/>
+                                        <label>Как вас зовут</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="phone" name="phone" placeholder=" "/>
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="">Какую лестницу нужно смонтировать</option>
+                                        <option value="">Обычная</option>
+                                        <option value="">Волшебная</option>
+                                    </select>
+                                    <div class="customSelectPlaceholder">Какую лестницу нужно смонтировать</div>
+                                </div>
+                                <label class="labelCheckbox">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </div>
+                                    Требуется облицовка лестницы
+                                </label>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="">Материал облицовки</option>
+                                        <option value="">Обычная</option>
+                                        <option value="">Волшебная</option>
+                                    </select>
+                                    <div class="customSelectPlaceholder">Материал облицовки</div>
+                               </div>                               
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="city" placeholder=" "/>
+                                        <label>Адрес</label>
+                                    </div>
+                                    <span class="inputDinamicTextBottom">Город и улица</span>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="textarea" placeholder=" "/>
+                                        <label>Любая важная информация</label>
+                                    </div>
+                                </div>
+                                <label class="input-file">
+                                    <input type="file" name="file">		
+                                    <span>Выберите файл</span>
                                 </label>
                                 <button class="btn offerBtn">
                                     Отправить
@@ -127,7 +240,374 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Вход в кабинет-->
+                <div class="popupModal" id="popupModal-3">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Вход в кабинет
+                            </div>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="mail" name="email" placeholder=" "/>
+                                        <label>E-mail</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="password" name="password" placeholder=" "/>
+                                        <label>Пароль</label>
+                                    </div>
+                                    <a href="#" class="inputDinamicTextBottom">Восставновить пароль</a>
+                                </div>
+                                <div class="wrapBtn">
+                                    <button class="btn offerBtn">
+                                        Войти
+                                    </button>
+                                    <p class="formText">Нет аккаунта? <a href="#">Зарегистрируйтесь</a></p>    
+                                </div>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Сброс пароля-->
+                <div class="popupModal" id="popupModal-4">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Сброс пароля
+                            </div>
+                            <p class="message">
+                                Отправили ссылку для сброса пароля на почту mailto:info@domain.com
+                            </p>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="mail" name="email" placeholder=" "/>
+                                        <label>E-mail</label>
+                                    </div>
+                                </div>
+                                <button class="btn offerBtn">
+                                    Восстановить пароль
+                                </button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Новый пароль-->
+                <div class="popupModal" id="popupModal-5">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Новый пароль
+                            </div>
+                            <p class="message">
+                                Пароль успешно изменен, войдите в кабинет с новым паролем
+                            </p>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="password" class="pass" name="password" placeholder=" "/>
+                                        <label>Пароль</label>
+                                        <span class="btnEye"></span>    
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="password" class="pass" name="password" placeholder=" "/>
+                                        <label>Повторите пароль</label>
+                                        <span class="btnEye"></span>
+                                    </div>
+                                </div>
+                                <button class="btn offerBtn">
+                                    Восстановить пароль
+                                </button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Регистрация -->
+                <div class="popupModal" id="popupModal-6">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Регистрация
+                            </div>
+                            <div class="wrapBtn">
+                                <a href="#" class="btn reg">
+                                    Дилер/дистрибьютор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Дизайнер/архитектор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Монтажник
+                                </a>
+                            </div>
+                            <form class="form">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Регистрация Дилер-->
+                <div class="popupModal" id="popupModal-7">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Регистрация
+                            </div>
+                            <div class="wrapBtn">
+                                <a href="#" class="btn reg active">
+                                    Дилер/дистрибьютор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Дизайнер/архитектор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Монтажник
+                                </a>
+                            </div>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="company" placeholder=" "/>
+                                        <label>Название компании</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="city" placeholder=" "/>
+                                        <label>Регион</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="name" placeholder=" "/>
+                                        <label>Имя контактного лица</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="phone" name="phone" placeholder=" "/>
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>                                
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="email" name="mail" placeholder=" "/>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="textarea" placeholder=" "/>
+                                        <label>Вопрос или комментарий</label>
+                                    </div>
+                                    <span class="inputDinamicTextBottom">Не обязательно</span>
+                                </div>
+                                <p class="policy">Отправляя заявку вы соглашаетесь с <a href="#">правилами</a> и <a href="#">условиями</a></p>
+                                <button class="btn offerBtn">
+                                    Восстановить пароль
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Регистрация архитектор-->
+                <div class="popupModal" id="popupModal-8">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Регистрация
+                            </div>
+                            <div class="wrapBtn">
+                                <a href="#" class="btn reg">
+                                    Дилер/дистрибьютор
+                                </a>
+                                <a href="#" class="btn reg active">
+                                    Дизайнер/архитектор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Монтажник
+                                </a>
+                            </div>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="city" placeholder=" "/>
+                                        <label>Регион</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="name" placeholder=" "/>
+                                        <label>Имя</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="phone" name="phone" placeholder=" "/>
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>                                
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="email" name="mail" placeholder=" "/>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="textarea" placeholder=" "/>
+                                        <label>Вопрос или комментарий</label>
+                                    </div>
+                                    <span class="inputDinamicTextBottom">Не обязательно</span>
+                                </div>
+                                <p class="policy">Отправляя заявку вы соглашаетесь с <a href="#">правилами</a> и <a href="#">условиями</a></p>
+                                <button class="btn offerBtn">
+                                    Восстановить пароль
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Регистрация монтажника-->
+                <div class="popupModal" id="popupModal-9">
+                    <div class="overlayPopup"></div>
+                    <div class="popup">
+                        <div class="animateLines">
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                            <div class="animateLine"></div>
+                        </div>
+                        <div class="popupBody">
+                            <span class="closeBtnPopup">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </span>
+                            <div class="title">
+                                Регистрация
+                            </div>
+                            <div class="wrapBtn">
+                                <a href="#" class="btn reg">
+                                    Дилер/дистрибьютор
+                                </a>
+                                <a href="#" class="btn reg">
+                                    Дизайнер/архитектор
+                                </a>
+                                <a href="#" class="btn reg active">
+                                    Монтажник
+                                </a>
+                            </div>
+                            <form class="form">
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="city" placeholder=" "/>
+                                        <label>Регион</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="name" placeholder=" "/>
+                                        <label>Имя</label>
+                                    </div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="phone" name="phone" placeholder=" "/>
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>                                
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="email" name="mail" placeholder=" "/>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="">Опыт работы</option>
+                                        <option value="">100 лет</option>
+                                        <option value="">200 лет</option>
+                                    </select>
+                                    <div class="customSelectPlaceholder">Опыт работы</div>
+                                </div>
+                                <div class="inputDinamicWrap">
+                                    <div class="inputDinamic">
+                                        <input type="text" name="textarea" placeholder=" "/>
+                                        <label>Вопрос или комментарий</label>
+                                    </div>
+                                    <span class="inputDinamicTextBottom">Не обязательно</span>
+                                </div>
+                                <p class="policy">Отправляя заявку вы соглашаетесь с <a href="#">правилами</a> и <a href="#">условиями</a></p>
+                                <button class="btn offerBtn">
+                                    Восстановить пароль
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- 
             Здесь добавил к sectionOffers класс innerOffer

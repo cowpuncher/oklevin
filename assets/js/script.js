@@ -46,9 +46,42 @@ function ready() {
     }
 
     if(popupModal.length > 0) {
+        
         document.getElementById('popup-1').addEventListener('click', e => {
             e.preventDefault();
             activePopupUpdate('#popupModal-1');//активировать pop-up
+        });    
+        document.getElementById('popup-2').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-2');//активировать pop-up
+        });   
+        document.getElementById('popup-3').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-3');//активировать pop-up
+        });
+        document.getElementById('popup-4').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-4');//активировать pop-up
+        }); 
+        document.getElementById('popup-5').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-5');//активировать pop-up
+        });  
+        document.getElementById('popup-6').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-6');//активировать pop-up
+        });  
+        document.getElementById('popup-7').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-7');//активировать pop-up
+        });
+        document.getElementById('popup-8').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-8');//активировать pop-up
+        });   
+        document.getElementById('popup-9').addEventListener('click', e => {
+            e.preventDefault();
+            activePopupUpdate('#popupModal-9');//активировать pop-up
         });    
     }
     //---------------------
@@ -77,6 +110,7 @@ function ready() {
                 c.innerHTML = selElmnt.options[j].innerHTML;
                 c.classList.add('status');
                 c.addEventListener("click", function(e) {
+                    e.target.closest(".customSelect").querySelector(".customSelectPlaceholder").classList.add("active");
                     /* When an item is clicked, update the original select box,
                     and the selected item: */
                     var y, i, k, s, h, sl, yl;
@@ -136,59 +170,32 @@ function ready() {
         then close all select boxes: */
         document.addEventListener("click", closeAllSelect);
     }
-    customSelect('customSelect', 0);
+    customSelect('customSelect', 1);
 
-
-    let placeholder = document.querySelectorAll('.placeholder');
-    let inputs = document.querySelectorAll('.label input');
-    let popups = document.querySelector('.popups');
-
-    // placeholder.forEach(element => {
-    //     element.addEventListener('click', e => {
-    //         e.currentTarget.classList.add('active')
-    //     })
-    // });
-    document.addEventListener('click', e => {
-        let curEl = e.target;
-        if(curEl.classList.contains('placeholder')) {
-            if(curEl.nextElementSibling.value !== '' || !curEl.closest('label').querySelector('.placeholder').classList.contains('active')) {
-                curEl.classList.add('active');
-                console.log('test');
+    // Показать или скрыть пароль
+    function show(p) {
+        p.setAttribute('type', 'text');
+    }
+    function hide(p) {
+        p.setAttribute('type', 'password');
+    }
+    var pwShown = 0;
+    let btnEye = document.querySelectorAll('.btnEye');
+    btnEye.forEach(btn => {
+        btn.addEventListener("click", function (e) {
+            let curBtn = e.target;
+            curBtn.classList.toggle('active')
+            let passInput = curBtn.closest('.inputDinamic').querySelector('.pass');
+            console.log(curBtn.closest('.inputDinamic').querySelector('.pass'));
+            if (pwShown == 0) {
+                pwShown = 1;
+                show(passInput);
+            } else {
+                pwShown = 0;
+                hide(passInput);
             }
-            
-            //if(curEl.nextElementSibling.value !== '' || curEl.classList.contains('placeholder'))
-        } else {
-            inputs.forEach(input => {
-                if(input.value === '') {
-                    for(var i = 0; i < inputs.length; i++) {
-                        if(inputs[i].closest('label').querySelector('.placeholder').classList.contains('active')) {
-                            inputs[i].closest('label').querySelector('.placeholder').classList.remove('active');
-                        }
-                    }                    
-                }
-            });
-        }
-        inputs.forEach(input => {
-            if(input.value === '') {
-                for(var i = 0; i < inputs.length; i++) {
-                    // if(inputs[i].closest('label').querySelector('.placeholder').classList.contains('active')) {
-                    //     inputs[i].closest('label').querySelector('.placeholder').classList.remove('active');
-                    // }
-                }
-                
-                // if(input.closest('label').querySelector('.placeholder')) {
-                //     console.log(input.closest('label').querySelector('.placeholder').classList.contains('.active'));
-                //     if(input.closest('label').querySelector('.placeholder').classList.contains('.active')) {
-                //         input.closest('label').querySelector('.placeholder').classList.remove('active');
-                //     }
-                // }
-                //if(input.closest('label').querySelector('.placeholder')) {
-                //    input.closest('label').querySelector('.placeholder').classList.remove('active');
-                //}
-                //input.closest('label').querySelector('.placeholder').classList.remove('active');
-            }
-        });
-    })
+        }, false);
+    });
 }
 
 document.addEventListener("DOMContentLoaded", ready);
