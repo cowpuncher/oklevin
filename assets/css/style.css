@@ -65,7 +65,7 @@ a.btnBig {
     color: var(--color-red);
 }
 .btn {
-    border: 3px solid var(--color-main);
+    border: 3px solid;
     border-radius: 40px;
     background: transparent;
     padding: 10px 18px;
@@ -75,6 +75,9 @@ a.btnBig {
     display: inline-block;
     color: var(--color-main);
     text-decoration: none;
+}
+.btn:hover {
+    color: var(--color-red);
 }
 .reg.active {
     padding-left: 37px;
@@ -289,6 +292,9 @@ label.labelCheckbox input:checked ~ span {
     position: relative;    
     border-bottom: 2px solid #d7d7d7;
 }
+.inputDinamic:hover {    
+    border-bottom: 2px solid var(--color-main);
+}
 .inputDinamic label{
     position: absolute;
     top: 21px;
@@ -434,6 +440,46 @@ span.btnEye.active {
 .input-file input[type=file]:disabled + span {
 	background-color: #eee;
 }
+/* Пагинация */
+.pagi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 83px;
+}
+.pagi .wrap a,
+.pagi span {
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.pagi .wrap span {
+    opacity: .5;
+}
+.pagi .wrap a:hover {
+    color: #808080;
+    background: #d7d7d780;
+}
+.pagi .wrap a.active {
+    background: var(--color-red)!important;
+    color: #fff!important ;
+}
+.pagiBtn {
+    font-size: 15px;
+    color: var(--color-main);
+    font-weight: 500;
+    border: 3px solid;
+    padding: 7px 17px;
+    border-radius: 40px;
+}
+.pagiBtn:hover {
+    color: var(--color-red);
+}
 
 /*ANCHOR --- Кастомизированный селект */
 .customSelect {
@@ -526,10 +572,12 @@ span.btnEye.active {
     justify-content: center;
     margin: 0 8px 12px 0;
 }
-.alphabet a.active,
-.alphabet a:hover {
+.alphabet a.active {
     background: var(--color-red);
     color: #fff;
+}
+.alphabet a:hover {
+    background: #d7d7d780;
 }
 /* Top panel */
 .topPanel {
@@ -588,6 +636,10 @@ span.btnEye.active {
 .closeBtnPopup img {
     width: auto;
     height: auto;
+}
+.social:hover,
+.closeBtnPopup:hover {
+    filter: invert(13%) sepia(97%) saturate(11107%) hue-rotate(1078deg) brightness(170%) contrast(113%);
 }
 .closeBtnPopup {
     position: absolute;
