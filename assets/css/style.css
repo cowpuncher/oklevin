@@ -166,9 +166,9 @@ li:before {
     left: 0;
 }
 label {
-    border-bottom: 2px solid #d7d7d7;
+    /* border-bottom: 2px solid #d7d7d7; */
     display: flex;
-    margin-bottom: 37px;
+    /* margin-bottom: 37px; */
     position: relative;
 }
 input,
@@ -1594,9 +1594,6 @@ a.site {
 }
 .contactSection .wrap {
     padding-bottom: 60px;
-}
-.contactBlock .form {
-    padding-right: 60px;
 }
 
 /* Страница выбора Монтажников */
